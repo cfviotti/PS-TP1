@@ -11,11 +11,11 @@ import junit.framework.TestCase;
 public class PrimeNumberUtilsTest extends TestCase {
 
 	/**
-	 * Testa o método isPrime.
+	 * Testa o mÃ©todo isPrime.
 	 */
 	@Test
 	public void testIsPrime() {
-		/* Testando para um número negativo. */
+		/* Testando para um nÃºmero negativo. */
 		boolean retornoRealNegativo = PrimeNumberUtils.isPrime(-1);
 		assertFalse(retornoRealNegativo);
 		
@@ -27,17 +27,17 @@ public class PrimeNumberUtilsTest extends TestCase {
 		boolean retornoRealUm = PrimeNumberUtils.isPrime(1);
 		assertFalse(retornoRealUm);
 		
-		/* Testando para números positivos. */
+		/* Testando para nÃºmeros positivos. */
 		boolean retornoRealPositivo = PrimeNumberUtils.isPrime(3);
 		assertTrue(retornoRealPositivo);
 	}
 	
 	/**
-	 * Testa o método nextPrime.
+	 * Testa o mÃ©todo nextPrime.
 	 */
 	@Test
 	public void testNextPrime() {
-		/* Testando para um número negativo. */
+		/* Testando para um nÃºmero negativo. */
 		Integer retornoEsperadoNegativo = 2;
 		Integer retornoRealNegativo = PrimeNumberUtils.nextPrime(-1);
 		assertEquals(retornoEsperadoNegativo, retornoRealNegativo);
@@ -47,7 +47,7 @@ public class PrimeNumberUtilsTest extends TestCase {
 		Integer retornoRealZero = PrimeNumberUtils.nextPrime(0);
 		assertEquals(retornoEsperadoZero, retornoRealZero);
 
-		/* Testando para números positivos. */
+		/* Testando para nÃºmeros positivos. */
 		Integer retornoEsperadoPositivo = 11;
 		Integer retornoRealPositivo = PrimeNumberUtils.nextPrime(7);
 		assertEquals(retornoEsperadoPositivo, retornoRealPositivo);
