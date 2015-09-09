@@ -1,0 +1,15 @@
+Calendario de Palestras (05/2015 – 08/2015)
+Mes 05/2015 – Maio
+Dia 01
+Palestra1 (Palestrante1): 8:00-10:00.
+Palestra2 (Palestrante2): 14:00-15:30.
+...
+PalestraN (PalestranteN): HH:MM-HH:MM.
+Dia 02
+Palestra1 (Palestrante1): 9:00-10:55.
+Palestra2 (Palestrante2): 13:00-14:40.
+...
+PalestraN (PalestranteN): HH:MM-HH:MM.
+...
+Mes 06/2015 – Junho
+...
