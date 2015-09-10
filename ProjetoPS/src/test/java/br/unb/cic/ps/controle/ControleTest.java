@@ -1,5 +1,14 @@
 package br.unb.cic.ps.controle;
 
-public class ControleTest {
+import org.junit.Test;
 
+import junit.framework.TestCase;
+
+public class ControleTest extends TestCase {
+
+	@Test
+	public void testControle() {
+		Controle moduloControle = new ControleImpl();
+		assertTrue(moduloControle.controleTest());
+	}
 }
