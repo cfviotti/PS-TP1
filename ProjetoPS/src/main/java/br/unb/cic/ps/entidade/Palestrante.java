@@ -1,14 +1,25 @@
 package br.unb.cic.ps.entidade;
 
+import java.util.List;
+
 public class Palestrante {
 
 	private String nome;
 	
-	private String disponibilidade;
+	private List<Disponibilidade> disponibilidades;
 
 	@Override
 	public String toString() {
-		return "Nome: " + nome + ", Disponibilidade: " + disponibilidade;
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append("Nome: ");
+		stringBuilder.append(nome + "; ");
+		stringBuilder.append("Disponibilidade: ");
+		for (Disponibilidade disponibilidade : disponibilidades) {
+			stringBuilder.append(disponibilidade.getDiaDaSemana() + ", ");
+			stringBuilder.append(disponibilidade.getData() + ", ");
+			stringBuilder.append(disponibilidade.getHorario() + "; ");
+		}
+		return stringBuilder.toString();
 	}
 	
 	public String getNome() {
@@ -19,12 +30,12 @@ public class Palestrante {
 		this.nome = nome;
 	}
 
-	public String getDisponibilidade() {
-		return disponibilidade;
+	public List<Disponibilidade> getDisponibilidades() {
+		return disponibilidades;
 	}
 
-	public void setDisponibilidade(String disponibilidade) {
-		this.disponibilidade = disponibilidade;
+	public void setDisponibilidades(List<Disponibilidade> disponibilidades) {
+		this.disponibilidades = disponibilidades;
 	}
 	
 }
