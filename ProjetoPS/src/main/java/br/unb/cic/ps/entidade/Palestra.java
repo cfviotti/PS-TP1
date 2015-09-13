@@ -12,6 +12,12 @@ public class Palestra {
 	
 	private String duracao;
 
+	@Override
+	public String toString() {
+		return "Nome: " + nome + ", Nome do Palestrante: " + palestrante.getNome() +
+				", Tema: " + tema +	", Local: " + local + ", Duracao: " + duracao;
+	}
+	
 	public String getNome() {
 		return nome;
 	}

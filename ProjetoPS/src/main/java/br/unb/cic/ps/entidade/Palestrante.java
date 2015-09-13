@@ -6,6 +6,11 @@ public class Palestrante {
 	
 	private String disponibilidade;
 
+	@Override
+	public String toString() {
+		return "Nome: " + nome + ", Disponibilidade: " + disponibilidade;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
