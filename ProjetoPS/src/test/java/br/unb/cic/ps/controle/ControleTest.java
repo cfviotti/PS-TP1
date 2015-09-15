@@ -6,9 +6,10 @@ import junit.framework.TestCase;
 
 public class ControleTest extends TestCase {
 
+	Controle moduloControle = new ControleImpl();
+	
 	@Test
 	public void testControle() {
-		Controle moduloControle = new ControleImpl();
 		assertTrue(moduloControle.controleTest());
 	}
 }

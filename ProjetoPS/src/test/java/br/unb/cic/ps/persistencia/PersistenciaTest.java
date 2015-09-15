@@ -6,9 +6,10 @@ import junit.framework.TestCase;
 
 public class PersistenciaTest extends TestCase {
 
+	Persistencia moduloPersistencia = new PersistenciaImpl();
+	
 	@Test
 	public void testPersistencia() {
-		Persistencia moduloPersistencia = new PersistenciaImpl();
 		assertTrue(moduloPersistencia.persistenciaTest());
 	}
 

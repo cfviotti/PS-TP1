@@ -19,12 +19,14 @@ public class TratamentoTest extends TestCase {
 
 	@Test
 	public void testTratarDadosPalestras() {
-		assertFalse(moduloTratamento.tratarDadosPalestras(moduloLeitura.lerArquivoPalestras("Palestras.txt")).isEmpty());
+		assertFalse(moduloTratamento.tratarDadosPalestras(
+				moduloLeitura.lerArquivoPalestras("Palestras.txt")).isEmpty());
 	}
 	
 	@Test
 	public void testTratarDadosPalestrantes() {
-		assertFalse(moduloTratamento.tratarDadosPalestrantes(moduloLeitura.lerArquivoPalestrantes("Palestrantes.txt")).isEmpty());	
+		assertFalse(moduloTratamento.tratarDadosPalestrantes(
+				moduloLeitura.lerArquivoPalestrantes("Palestrantes.txt")).isEmpty());	
 	}
 	
 }
