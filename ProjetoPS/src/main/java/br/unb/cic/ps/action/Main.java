@@ -9,6 +9,8 @@ import br.unb.cic.ps.entidade.Palestra;
 import br.unb.cic.ps.entidade.Palestrante;
 import br.unb.cic.ps.leitura.Leitura;
 import br.unb.cic.ps.leitura.LeituraImpl;
+import br.unb.cic.ps.persistencia.Persistencia;
+import br.unb.cic.ps.persistencia.PersistenciaImpl;
 import br.unb.cic.ps.tratamento.Tratamento;
 import br.unb.cic.ps.tratamento.TratamentoImpl;
 
@@ -18,6 +20,7 @@ public class Main {
 		Leitura moduloLeitura = new LeituraImpl();
 		Tratamento moduloTratamento = new TratamentoImpl();
 		Calendario moduloCalendario = new CalendarioImpl();
+		Persistencia moduloPersistencia = new PersistenciaImpl();
 		System.out.println("Palestras (Modulo Leitura):");
 		List<String[]> dadosPalestras = moduloLeitura.lerArquivoPalestras("Palestras.txt");
 		for (int i = 0; i < dadosPalestras.size(); i++) {
@@ -47,10 +50,22 @@ public class Main {
 		System.out.println("Palestrantes (Modulo Calendario):");
 		palestrantes = moduloCalendario.criarCalendarioPalestrantes(palestrantes);
 		for (Palestrante palestrante : palestrantes) {
+			System.out.println(palestrante);
 			for (Disponibilidade disponibilidade : palestrante.getDisponibilidades()) {
 				System.out.println(disponibilidade.getCalendarioDisponibilidade());
 			}
 		}
+		System.out.println("Palestrantes (Modulo Persistencia):");
+		for (Palestra palestra : palestras) {
+			for (Palestrante palestrante : palestrantes) {
+				if (palestra.getPalestrante() != null && palestra.getPalestrante().getNome() != null) {
+					if (palestra.getPalestrante().getNome().equals(palestrante.getNome())) {
+						palestra.setPalestrante(palestrante);
+					}
+				}
+			}
+		}
+		moduloPersistencia.imprimirArquivo(palestras, "output.txt");
 	}
 	
 }
