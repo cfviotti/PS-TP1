@@ -5,3 +5,4 @@ Data		Horas Trabalhadas	Tipo Tarefa				Descricao da Tarefa Realizada
 12/09/2015	1:30				Codificar modulo		Codificar o modulo de leitura, criar a classe Main, ajustar os arquivos de texto
 13/09/2015	1:00				Codificar modulo		Codificar o modulo de tratamento, criar a entidade Disponibilidade, ajustar arquivos de texto
 14/09/2015	1:30				Codificar modulo		Codificar o modulo do calendario, criar a entidade CalendarioDisponibilidade, ajustar entidades exitentes, criar testes para o modulo de calendario
+15/09/2015	1:00				Codificar modulo		Codificar parte do modulo de persistencia
