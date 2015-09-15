@@ -74,7 +74,7 @@ public class TratamentoImpl implements Tratamento {
 			case "Disponibilidade:":
 				List<Disponibilidade> disponibilidades = new ArrayList<>();
 				Disponibilidade disponibilidade = new Disponibilidade();
-				disponibilidade.setDiaDaSemana(line[1]);
+				disponibilidade.setDiaSemana(line[1]);
 				disponibilidade.setData(line[2]);
 				disponibilidade.setHorario(line[3]);
 				disponibilidades.add(disponibilidade);
@@ -83,7 +83,7 @@ public class TratamentoImpl implements Tratamento {
 				for (int i = 1; i < line.length / 3; i++) {
 					while (j < stop) {
 						disponibilidade = new Disponibilidade();
-						disponibilidade.setDiaDaSemana(line[j]);
+						disponibilidade.setDiaSemana(line[j]);
 						disponibilidade.setData(line[++j]);
 						disponibilidade.setHorario(line[++j]);
 						disponibilidades.add(disponibilidade);

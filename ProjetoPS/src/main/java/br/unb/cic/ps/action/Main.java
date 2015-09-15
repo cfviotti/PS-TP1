@@ -2,6 +2,9 @@ package br.unb.cic.ps.action;
 
 import java.util.List;
 
+import br.unb.cic.ps.calendario.Calendario;
+import br.unb.cic.ps.calendario.CalendarioImpl;
+import br.unb.cic.ps.entidade.Disponibilidade;
 import br.unb.cic.ps.entidade.Palestra;
 import br.unb.cic.ps.entidade.Palestrante;
 import br.unb.cic.ps.leitura.Leitura;
@@ -14,6 +17,7 @@ public class Main {
 	public static void main(String[] args) {
 		Leitura moduloLeitura = new LeituraImpl();
 		Tratamento moduloTratamento = new TratamentoImpl();
+		Calendario moduloCalendario = new CalendarioImpl();
 		System.out.println("Palestras (Modulo Leitura):");
 		List<String[]> dadosPalestras = moduloLeitura.lerArquivoPalestras("Palestras.txt");
 		for (int i = 0; i < dadosPalestras.size(); i++) {
@@ -39,6 +43,13 @@ public class Main {
 		List<Palestrante> palestrantes = moduloTratamento.tratarDadosPalestrantes(dadosPalestrantes);
 		for (Palestrante palestrante : palestrantes) {
 			System.out.println(palestrante);
+		}
+		System.out.println("Palestrantes (Modulo Calendario):");
+		palestrantes = moduloCalendario.criarCalendarioPalestrantes(palestrantes);
+		for (Palestrante palestrante : palestrantes) {
+			for (Disponibilidade disponibilidade : palestrante.getDisponibilidades()) {
+				System.out.println(disponibilidade.getCalendarioDisponibilidade());
+			}
 		}
 	}
 	
