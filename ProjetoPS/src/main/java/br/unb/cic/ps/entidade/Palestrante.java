@@ -15,7 +15,7 @@ public class Palestrante {
 		stringBuilder.append(nome + "; ");
 		stringBuilder.append("Disponibilidade: ");
 		for (Disponibilidade disponibilidade : disponibilidades) {
-			stringBuilder.append(disponibilidade.getDiaDaSemana() + ", ");
+			stringBuilder.append(disponibilidade.getDiaSemana() + ", ");
 			stringBuilder.append(disponibilidade.getData() + ", ");
 			stringBuilder.append(disponibilidade.getHorario() + "; ");
 		}

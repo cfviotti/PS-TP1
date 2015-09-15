@@ -2,18 +2,20 @@ package br.unb.cic.ps.entidade;
 
 public class Disponibilidade {
 
-	private String diaDaSemana;
+	private String diaSemana;
 	
 	private String data;
 	
 	private String horario;
+	
+	private CalendarioDisponibilidade calendarioDisponibilidade;
 
-	public String getDiaDaSemana() {
-		return diaDaSemana;
+	public String getDiaSemana() {
+		return diaSemana;
 	}
 
-	public void setDiaDaSemana(String diaDaSemana) {
-		this.diaDaSemana = diaDaSemana;
+	public void setDiaSemana(String diaSemana) {
+		this.diaSemana = diaSemana;
 	}
 
 	public String getData() {
@@ -30,6 +32,14 @@ public class Disponibilidade {
 
 	public void setHorario(String horario) {
 		this.horario = horario;
+	}
+
+	public CalendarioDisponibilidade getCalendarioDisponibilidade() {
+		return calendarioDisponibilidade;
+	}
+
+	public void setCalendarioDisponibilidade(CalendarioDisponibilidade calendarioDisponibilidade) {
+		this.calendarioDisponibilidade = calendarioDisponibilidade;
 	}
 	
 }
