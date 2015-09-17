@@ -1,2 +1,0 @@
-NomePalestra1 (Palestrante1): 10:0-12:0. 
-NomePalestra2 (Palestrante2): 12:0-14:0. 

@@ -19,6 +19,7 @@ public class PersistenciaImpl implements Persistencia {
 	@Override
 	public void imprimirArquivo(List<Palestra> palestras, String fileName) {
 		try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(FILE_PATH + fileName))) {
+			bufferedWriter.write("Calendario de Palestras\n\n");
 			for (Palestra palestra : palestras) {
 				bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
 				for (Disponibilidade disponibilidade : palestra.getPalestrante().getDisponibilidades()) {
@@ -29,8 +30,7 @@ public class PersistenciaImpl implements Persistencia {
 						bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.HOUR_OF_DAY) + ":");
 						bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.MINUTE) + "-");
 						bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.HOUR_OF_DAY) + ":");
-						bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.MINUTE) + ". ");
-						bufferedWriter.write("\n");
+						bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.MINUTE) + ".\n");
 						break;
 					}
 				}

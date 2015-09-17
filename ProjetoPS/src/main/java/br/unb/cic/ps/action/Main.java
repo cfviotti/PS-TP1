@@ -53,7 +53,7 @@ public class Main {
 				}
 			}
 		}
-		String fileName = "Output.txt";
+		String fileName = "CalendarioPalestras.txt";
 		moduloPersistencia.imprimirArquivo(palestras, fileName);
 		System.out.println("Arquivo " + fileName + " criado.");
 	}
