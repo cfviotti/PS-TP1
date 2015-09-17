@@ -7,3 +7,4 @@ Data		Horas Trabalhadas	Tipo Tarefa					Descricao da Tarefa Realizada
 14/09/2015	1:30				Codificar modulo			Codificar o modulo do calendario, criar a entidade CalendarioDisponibilidade, ajustar entidades exitentes, criar testes para o modulo de calendario
 15/09/2015	1:00				Codificar modulo			Codificar parte do modulo de persistencia
 16/09/2015	2:00				Revisar codigo do modulo	Revisar codigo dos modulos e das entidades, ajustar testes de acordo com estes
+17/09/2015	0:15				Revisar codigo do modulo	Ajustes no modulo de persistencia e nome do arquivo de output
