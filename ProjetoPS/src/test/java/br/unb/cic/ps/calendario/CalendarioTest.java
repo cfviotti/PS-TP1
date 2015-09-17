@@ -13,6 +13,4 @@ public class CalendarioTest extends TestCase {
 		assertTrue(moduloCalendario.calendarTest());
 	}
 	
-	
-	
 }

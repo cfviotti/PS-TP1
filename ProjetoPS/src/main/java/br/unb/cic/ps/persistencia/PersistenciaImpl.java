@@ -22,11 +22,17 @@ public class PersistenciaImpl implements Persistencia {
 			for (Palestra palestra : palestras) {
 				bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
 				for (Disponibilidade disponibilidade : palestra.getPalestrante().getDisponibilidades()) {
-					bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.HOUR_OF_DAY) + ":");
-					bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.MINUTE) + "-");
-					bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.HOUR_OF_DAY) + ":");
-					bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.MINUTE) + ". ");
-					bufferedWriter.write("\n");
+					Integer horas = disponibilidade.getDataFim().get(Calendar.HOUR_OF_DAY) - disponibilidade.getDataInicio().get(Calendar.HOUR_OF_DAY);
+					Integer minutos = disponibilidade.getDataFim().get(Calendar.MINUTE) - disponibilidade.getDataInicio().get(Calendar.MINUTE);
+					Integer minutosDisponiveis = horas * 60 + minutos;
+					if (minutosDisponiveis >= palestra.getDuracao()) {
+						bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.HOUR_OF_DAY) + ":");
+						bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.MINUTE) + "-");
+						bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.HOUR_OF_DAY) + ":");
+						bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.MINUTE) + ". ");
+						bufferedWriter.write("\n");
+						break;
+					}
 				}
 			}
 		} catch (IOException e) {
