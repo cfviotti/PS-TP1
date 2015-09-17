@@ -20,21 +20,13 @@ public class PersistenciaImpl implements Persistencia {
 	public void imprimirArquivo(List<Palestra> palestras, String fileName) {
 		try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(FILE_PATH + fileName))) {
 			for (Palestra palestra : palestras) {
-				if (palestra.getPalestrante() != null) {
-					bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
-					if (palestra.getPalestrante().getDisponibilidades() != null && !palestra.getPalestrante().getDisponibilidades().isEmpty()) {
-						for (Disponibilidade disponibilidade : palestra.getPalestrante().getDisponibilidades()) {
-							if (disponibilidade.getCalendarioDisponibilidade() != null) {
-								if (disponibilidade.getCalendarioDisponibilidade().getDataInicio() != null && disponibilidade.getCalendarioDisponibilidade().getDataFim() != null) {
-									bufferedWriter.write(disponibilidade.getCalendarioDisponibilidade().getDataInicio().get(Calendar.HOUR_OF_DAY) + ":");
-									bufferedWriter.write(disponibilidade.getCalendarioDisponibilidade().getDataInicio().get(Calendar.MINUTE) + "-");
-									bufferedWriter.write(disponibilidade.getCalendarioDisponibilidade().getDataFim().get(Calendar.HOUR_OF_DAY) + ":");
-									bufferedWriter.write(disponibilidade.getCalendarioDisponibilidade().getDataFim().get(Calendar.MINUTE) + ". ");
-								}
-							}
-						}
-						bufferedWriter.write("\n");
-					}
+				bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
+				for (Disponibilidade disponibilidade : palestra.getPalestrante().getDisponibilidades()) {
+					bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.HOUR_OF_DAY) + ":");
+					bufferedWriter.write(disponibilidade.getDataInicio().get(Calendar.MINUTE) + "-");
+					bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.HOUR_OF_DAY) + ":");
+					bufferedWriter.write(disponibilidade.getDataFim().get(Calendar.MINUTE) + ". ");
+					bufferedWriter.write("\n");
 				}
 			}
 		} catch (IOException e) {

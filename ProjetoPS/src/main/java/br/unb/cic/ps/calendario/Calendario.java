@@ -1,12 +1,16 @@
 package br.unb.cic.ps.calendario;
 
-import java.util.List;
-
-import br.unb.cic.ps.entidade.Palestrante;
+import java.util.Calendar;
 
 public interface Calendario {
 
 	boolean calendarTest();
 	
-	List<Palestrante> criarCalendarioPalestrantes(List<Palestrante> palestrantes);
+	int buscarDiaSemana(String diaSemana);
+	
+	Calendar buscarDataInicio(String dataInicio, String horario);
+	
+	Calendar buscarDataFim(String dataFim, String horario);
+	
+	boolean isDisponivelTodaSemana(String data);
 }

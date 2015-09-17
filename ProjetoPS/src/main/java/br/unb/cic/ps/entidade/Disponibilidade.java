@@ -1,45 +1,56 @@
 package br.unb.cic.ps.entidade;
 
+import java.util.Calendar;
+
 public class Disponibilidade {
+	
+	private int diaSemana;
 
-	private String diaSemana;
+	private Calendar dataInicio;
 	
-	private String data;
+	private Calendar dataFim;
 	
-	private String horario;
+	private boolean disponivelTodaSemana;
 	
-	private CalendarioDisponibilidade calendarioDisponibilidade;
+	@Override
+	public String toString() {
+		return "Dia da semana: " + diaSemana +
+				"; Data de Inicio: " + dataInicio.getTime() +
+				"; Data de Fim: " + dataFim.getTime() +
+				"; Disponivel toda semana: " + disponivelTodaSemana + "; ";
 
-	public String getDiaSemana() {
+	}
+
+	public int getDiaSemana() {
 		return diaSemana;
 	}
 
-	public void setDiaSemana(String diaSemana) {
+	public void setDiaSemana(int diaSemana) {
 		this.diaSemana = diaSemana;
 	}
 
-	public String getData() {
-		return data;
+	public Calendar getDataInicio() {
+		return dataInicio;
 	}
 
-	public void setData(String data) {
-		this.data = data;
+	public void setDataInicio(Calendar dataInicio) {
+		this.dataInicio = dataInicio;
 	}
 
-	public String getHorario() {
-		return horario;
+	public Calendar getDataFim() {
+		return dataFim;
 	}
 
-	public void setHorario(String horario) {
-		this.horario = horario;
+	public void setDataFim(Calendar dataFim) {
+		this.dataFim = dataFim;
 	}
 
-	public CalendarioDisponibilidade getCalendarioDisponibilidade() {
-		return calendarioDisponibilidade;
+	public boolean isDisponivelTodaSemana() {
+		return disponivelTodaSemana;
 	}
 
-	public void setCalendarioDisponibilidade(CalendarioDisponibilidade calendarioDisponibilidade) {
-		this.calendarioDisponibilidade = calendarioDisponibilidade;
+	public void setDisponivelTodaSemana(boolean disponivelTodaSemana) {
+		this.disponivelTodaSemana = disponivelTodaSemana;
 	}
 	
 }

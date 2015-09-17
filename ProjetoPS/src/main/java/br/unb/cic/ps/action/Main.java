@@ -2,9 +2,6 @@ package br.unb.cic.ps.action;
 
 import java.util.List;
 
-import br.unb.cic.ps.calendario.Calendario;
-import br.unb.cic.ps.calendario.CalendarioImpl;
-import br.unb.cic.ps.entidade.Disponibilidade;
 import br.unb.cic.ps.entidade.Palestra;
 import br.unb.cic.ps.entidade.Palestrante;
 import br.unb.cic.ps.leitura.Leitura;
@@ -19,7 +16,6 @@ public class Main {
 	public static void main(String[] args) {
 		Leitura moduloLeitura = new LeituraImpl();
 		Tratamento moduloTratamento = new TratamentoImpl();
-		Calendario moduloCalendario = new CalendarioImpl();
 		Persistencia moduloPersistencia = new PersistenciaImpl();
 		System.out.println("Palestras (Modulo Leitura):");
 		List<String[]> dadosPalestras = moduloLeitura.lerArquivoPalestras("Palestras.txt");
@@ -47,15 +43,7 @@ public class Main {
 		for (Palestrante palestrante : palestrantes) {
 			System.out.println(palestrante);
 		}
-		System.out.println("Palestrantes (Modulo Calendario):");
-		palestrantes = moduloCalendario.criarCalendarioPalestrantes(palestrantes);
-		for (Palestrante palestrante : palestrantes) {
-			System.out.println(palestrante);
-			for (Disponibilidade disponibilidade : palestrante.getDisponibilidades()) {
-				System.out.println(disponibilidade.getCalendarioDisponibilidade());
-			}
-		}
-		System.out.println("Palestrantes (Modulo Persistencia):");
+		System.out.println("Preparando chamada ao modulo Persistencia...");
 		for (Palestra palestra : palestras) {
 			for (Palestrante palestrante : palestrantes) {
 				if (palestra.getPalestrante() != null && palestra.getPalestrante().getNome() != null) {
@@ -65,7 +53,9 @@ public class Main {
 				}
 			}
 		}
-		moduloPersistencia.imprimirArquivo(palestras, "output.txt");
+		String fileName = "Output.txt";
+		moduloPersistencia.imprimirArquivo(palestras, fileName);
+		System.out.println("Arquivo " + fileName + " criado.");
 	}
 	
 }

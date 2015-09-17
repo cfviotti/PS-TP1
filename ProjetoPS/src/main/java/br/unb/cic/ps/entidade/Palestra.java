@@ -10,12 +10,12 @@ public class Palestra {
 	
 	private String local;
 	
-	private String duracao;
+	private Integer duracao;
 
 	@Override
 	public String toString() {
 		return "Nome: " + nome + ", Nome do Palestrante: " + palestrante.getNome() +
-				", Tema: " + tema +	", Local: " + local + ", Duracao: " + duracao;
+				", Tema: " + tema +	", Local: " + local + ", Duracao: " + duracao + " minutos";
 	}
 	
 	public String getNome() {
@@ -50,11 +50,11 @@ public class Palestra {
 		this.local = local;
 	}
 
-	public String getDuracao() {
+	public Integer getDuracao() {
 		return duracao;
 	}
 
-	public void setDuracao(String duracao) {
+	public void setDuracao(Integer duracao) {
 		this.duracao = duracao;
 	}
 	
