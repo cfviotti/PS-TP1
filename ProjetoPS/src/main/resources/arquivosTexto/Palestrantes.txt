@@ -1,4 +1,48 @@
 Nome: Palestrante1.
-Disponibilidade: Ter, 01/09/2015, 10:00-12:00; Qua, 00/09/2015, 8:00-9:30.
+Disponibilidade: Ter, 01/01/2015, 10:00-12:00; Qua, 00/01/2015, 8:00-9:30.
 Nome: Palestrante2.
-Disponibilidade: Dom, 06/09/2015, 12:00-14:00; Qui, 03/09/2015, 7:00-9:30; Seg, 00/10/2015, 14:00-16:30.
+Disponibilidade: Dom, 06/02/2015, 12:00-14:00; Qui, 03/02/2015, 7:00-9:30; Seg, 00/02/2015, 14:00-16:30.
+Nome: Palestrante3.
+Disponibilidade: Ter, 01/03/2015, 10:00-12:00; Qua, 00/03/2015, 8:00-9:30.
+Nome: Palestrante4.
+Disponibilidade: Dom, 06/04/2015, 12:00-14:00; Qui, 03/04/2015, 7:00-9:30; Seg, 00/04/2015, 14:00-16:30.
+Nome: Palestrante5.
+Disponibilidade: Ter, 01/05/2015, 10:00-12:00; Qua, 00/05/2015, 8:00-9:30.
+Nome: Palestrante6.
+Disponibilidade: Dom, 06/06/2015, 12:00-14:00; Qui, 03/06/2015, 7:00-9:30; Seg, 00/06/2015, 14:00-16:30.
+Nome: Palestrante7.
+Disponibilidade: Ter, 01/07/2015, 10:00-12:00; Qua, 00/07/2015, 8:00-9:30.
+Nome: Palestrante8.
+Disponibilidade: Ter, 01/08/2015, 10:00-12:00; Qua, 00/08/2015, 8:00-9:30.
+Nome: Palestrante9.
+Disponibilidade: Dom, 06/09/2015, 12:00-14:00; Qui, 03/09/2015, 7:00-9:30; Seg, 00/09/2015, 14:00-16:30.
+Nome: Palestrante10.
+Disponibilidade: Ter, 01/10/2015, 10:00-12:00; Qua, 00/10/2015, 8:00-9:30.
+Nome: Palestrante11.
+Disponibilidade: Dom, 06/11/2015, 12:00-14:00; Qui, 03/11/2015, 7:00-9:30; Seg, 00/11/2015, 14:00-16:30.
+Nome: Palestrante12.
+Disponibilidade: Ter, 01/12/2015, 10:00-12:00; Qua, 00/12/2015, 8:00-9:30.
+Nome: Palestrante13.
+Disponibilidade: Ter, 01/01/2015, 10:00-12:00; Qua, 00/01/2015, 8:00-9:30.
+Nome: Palestrante14.
+Disponibilidade: Dom, 06/02/2015, 12:00-14:00; Qui, 03/02/2015, 7:00-9:30; Seg, 00/02/2015, 14:00-16:30.
+Nome: Palestrante15.
+Disponibilidade: Ter, 01/03/2015, 10:00-12:00; Qua, 00/03/2015, 8:00-9:30.
+Nome: Palestrante16.
+Disponibilidade: Dom, 06/04/2015, 12:00-14:00; Qui, 03/04/2015, 7:00-9:30; Seg, 00/04/2015, 14:00-16:30.
+Nome: Palestrante17.
+Disponibilidade: Ter, 01/05/2015, 10:00-12:00; Qua, 00/05/2015, 8:00-9:30.
+Nome: Palestrante18.
+Disponibilidade: Dom, 06/06/2015, 12:00-14:00; Qui, 03/06/2015, 7:00-9:30; Seg, 00/06/2015, 14:00-16:30.
+Nome: Palestrante19.
+Disponibilidade: Ter, 01/07/2015, 10:00-12:00; Qua, 00/07/2015, 8:00-9:30.
+Nome: Palestrante20.
+Disponibilidade: Ter, 01/08/2015, 10:00-12:00; Qua, 00/08/2015, 8:00-9:30.
+Nome: Palestrante21.
+Disponibilidade: Dom, 06/09/2015, 12:00-14:00; Qui, 03/09/2015, 7:00-9:30; Seg, 00/09/2015, 14:00-16:30.
+Nome: Palestrante22.
+Disponibilidade: Ter, 01/10/2015, 10:00-12:00; Qua, 00/10/2015, 8:00-9:30.
+Nome: Palestrante23.
+Disponibilidade: Dom, 06/11/2015, 12:00-14:00; Qui, 03/11/2015, 7:00-9:30; Seg, 00/11/2015, 14:00-16:30.
+Nome: Palestrante24.
+Disponibilidade: Ter, 01/12/2015, 10:00-12:00; Qua, 00/12/2015, 8:00-9:30.
