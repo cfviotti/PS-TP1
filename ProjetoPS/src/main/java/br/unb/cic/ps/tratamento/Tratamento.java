@@ -7,8 +7,6 @@ import br.unb.cic.ps.entidade.Palestrante;
 
 public interface Tratamento {
 
-	boolean tratamentoTest();
-	
 	List<Palestra> tratarDadosPalestras(List<String[]> dados);
 	
 	List<Palestrante> tratarDadosPalestrantes(List<String[]> dados);

@@ -9,11 +9,6 @@ import java.util.List;
 public class LeituraImpl implements Leitura {
 
 	@Override
-	public boolean leituraTest() {
-		return true;
-	}
-
-	@Override
 	public List<String[]> lerArquivoPalestras(String fileName) {
 		List<String[]> dados = new ArrayList<>();
 		try (BufferedReader bufferedReader = new BufferedReader(new FileReader(FILE_PATH + fileName))) {

@@ -6,8 +6,6 @@ public interface Leitura {
 
 	String FILE_PATH = "src/main/resources/arquivosTexto/";
 	
-	boolean leituraTest();
-	
 	List<String[]> lerArquivoPalestras(String fileName);
 	
 	List<String[]> lerArquivoPalestrantes(String fileName);

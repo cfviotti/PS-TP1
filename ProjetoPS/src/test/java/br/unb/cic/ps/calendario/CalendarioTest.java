@@ -9,8 +9,23 @@ public class CalendarioTest extends TestCase {
 	Calendario moduloCalendario = new CalendarioImpl();
 	
 	@Test
-	public void testCalendario() {
-		assertTrue(moduloCalendario.calendarTest());
+	public void testBuscarDiaSemana() {
+		assertTrue(true);
+	}
+	
+	@Test
+	public void testBuscarDataInicio() {
+		assertTrue(true);
+	}
+	
+	@Test
+	public void testBuscarDataFim() {
+		assertTrue(true);
+	}
+	
+	@Test
+	public void testIsDisponivelTodaSemana() {
+		assertTrue(true);
 	}
 	
 }

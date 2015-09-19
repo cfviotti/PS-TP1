@@ -9,11 +9,6 @@ public class LeituraTest extends TestCase {
 	private Leitura moduloLeitura = new LeituraImpl();
 	
 	@Test
-	public void testLeitura() {
-		assertTrue(moduloLeitura.leituraTest());
-	}
-	
-	@Test
 	public void testLerArquivoPalestras() {
 		assertFalse(moduloLeitura.lerArquivoPalestras("Palestras.txt").isEmpty());
 	}

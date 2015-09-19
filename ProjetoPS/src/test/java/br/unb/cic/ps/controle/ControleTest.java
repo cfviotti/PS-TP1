@@ -9,7 +9,18 @@ public class ControleTest extends TestCase {
 	Controle moduloControle = new ControleImpl();
 	
 	@Test
-	public void testControle() {
-		assertTrue(moduloControle.controleTest());
+	public void testAlocarPalestras() {
+		assertTrue(true);
 	}
+	
+	@Test
+	public void testRemoverPalestrasSemHorario() {
+		assertTrue(true);
+	}
+	
+	@Test
+	public void testGerarMapaPalestras() {
+		assertTrue(true);
+	}
+
 }

@@ -9,8 +9,6 @@ public interface Persistencia {
 
 	String FILE_PATH = "src/main/resources/arquivosTexto/";
 	
-	boolean persistenciaTest();
-	
-	void imprimirArquivo(Map<Integer, List<Palestra>> palestras, String fileName, Integer opcao);
+	String imprimirArquivo(Map<Integer, List<Palestra>> palestras, String fileName, Integer opcao);
 	
 }

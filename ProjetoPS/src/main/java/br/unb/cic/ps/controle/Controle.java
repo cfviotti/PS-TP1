@@ -7,8 +7,6 @@ import br.unb.cic.ps.entidade.Palestra;
 
 public interface Controle {
 
-	boolean controleTest();
-	
 	void alocarPalestras(List<Palestra> palestras);
 	
 	void removerPalestrasSemHorario(List<Palestra> palestras);

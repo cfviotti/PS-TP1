@@ -8,11 +8,6 @@ import java.util.Calendar;
 public class CalendarioImpl implements Calendario {
 
 	@Override
-	public boolean calendarTest() {
-		return true;
-	}
-
-	@Override
 	public int buscarDiaSemana(String diaSemana) {
 		int diaSemanaInt = -1;
 		switch (diaSemana) {

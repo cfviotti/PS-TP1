@@ -3,8 +3,6 @@ package br.unb.cic.ps.calendario;
 import java.util.Calendar;
 
 public interface Calendario {
-
-	boolean calendarTest();
 	
 	int buscarDiaSemana(String diaSemana);
 	

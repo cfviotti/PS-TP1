@@ -2,7 +2,8 @@ package br.unb.cic.ps.action;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 import br.unb.cic.ps.controle.Controle;
 import br.unb.cic.ps.controle.ControleImpl;
@@ -20,70 +21,63 @@ public class Main {
 	public static void main(String[] args) {
 		Leitura moduloLeitura = new LeituraImpl();
 		Tratamento moduloTratamento = new TratamentoImpl();
-		Persistencia moduloPersistencia = new PersistenciaImpl();
 		Controle moduloControle = new ControleImpl();
-		System.out.println("Palestras (Modulo Leitura):");
+		Persistencia moduloPersistencia = new PersistenciaImpl();
 		List<String[]> dadosPalestras = moduloLeitura.lerArquivoPalestras("Palestras.txt");
-		for (int i = 0; i < dadosPalestras.size(); i++) {
-			for (int j = 0; j < dadosPalestras.get(i).length; j++) {
-				System.out.print(dadosPalestras.get(i)[j] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println("Palestrantes (Modulo Leitura):");
 		List<String[]> dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("Palestrantes.txt");
-		for (int i = 0; i < dadosPalestrantes.size(); i++) {
-			for (int j = 0; j < dadosPalestrantes.get(i).length; j++) {
-				System.out.print(dadosPalestrantes.get(i)[j] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println("Palestras (Modulo Tratamento):");
 		List<Palestra> palestras = moduloTratamento.tratarDadosPalestras(dadosPalestras);
-		for (Palestra palestra : palestras) {
-			System.out.println(palestra);
-		}
-		System.out.println("Palestrantes (Modulo Tratamento):");
 		List<Palestrante> palestrantes = moduloTratamento.tratarDadosPalestrantes(dadosPalestrantes);
-		for (Palestrante palestrante : palestrantes) {
-			System.out.println(palestrante);
-		}
-		System.out.println("Palestras (Modulo Tratamento):");
 		moduloTratamento.adicionarPalestrantes(palestras, palestrantes);
-		for (Palestra palestra : palestras) {
-			System.out.println(palestra);
-		}
-		System.out.println("Palestras (Modulo Controle):");
 		moduloControle.alocarPalestras(palestras);
 		moduloControle.removerPalestrasSemHorario(palestras);
-		for (Palestra palestra : palestras) {
-			System.out.println(palestra);
-		}
-		System.out.println("\n");
-		System.out.println("###########################################################");
-		System.out.println("# Escolha um dos meses para gerar o arquivo de palestras: #");
-		System.out.println("###########################################################\n\n");
-		System.out.println("0 - Todos os meses");
-		System.out.println("1 - Janeiro");
-		System.out.println("2 - Fevereiro");
-		System.out.println("3 - Marco");
-		System.out.println("4 - Abril");
-		System.out.println("5 - Maio");
-		System.out.println("6 - Junho");
-		System.out.println("7 - Julho");
-		System.out.println("8 - Agosto");
-		System.out.println("9 - Setembro");
-		System.out.println("10 - Outubro");
-		System.out.println("11 - Novembro");
-		System.out.println("12 - Dezembro");
-		Scanner scanner = new Scanner(System.in);
-		Integer opcao = Integer.valueOf(scanner.next());
-		System.out.println("Chamando o Modulo Persistencia...");
-		String fileName = "CalendarioPalestras.txt";
-		Map<Integer, List<Palestra>> palestrasMap = moduloControle.gerarMapaPalestras(palestras);
-		moduloPersistencia.imprimirArquivo(palestrasMap, fileName, opcao);
-		System.out.println("Arquivo " + fileName + " criado.");
-		scanner.close();
+		StringBuilder menuOpcoes = new StringBuilder();
+		menuOpcoes.append("Escolha um dos meses para gerar o arquivo de palestras:\n\n");
+		menuOpcoes.append("0 - Todos os meses\n");
+		menuOpcoes.append("1 - Janeiro\n");
+		menuOpcoes.append("2 - Fevereiro\n");
+		menuOpcoes.append("3 - Marco\n");
+		menuOpcoes.append("4 - Abril\n");
+		menuOpcoes.append("5 - Maio\n");
+		menuOpcoes.append("6 - Junho\n");
+		menuOpcoes.append("7 - Julho\n");
+		menuOpcoes.append("8 - Agosto\n");
+		menuOpcoes.append("9 - Setembro\n");
+		menuOpcoes.append("10 - Outubro\n");
+		menuOpcoes.append("11 - Novembro\n");
+		menuOpcoes.append("12 - Dezembro");
+		boolean opcaoValida = false;
+		do {
+			String userInput = (String) JOptionPane.showInputDialog(null, menuOpcoes.toString(), "Organizador de Eventos", JOptionPane.QUESTION_MESSAGE);
+			if (userInput != null && userInput.matches("^-?\\d+$")) {
+				Integer opcao = Integer.valueOf(userInput);
+				if (opcao > -1 && opcao < 13) {
+					opcaoValida = true;
+					String fileName = "CalendarioPalestras.txt";
+					Map<Integer, List<Palestra>> palestrasMap = moduloControle.gerarMapaPalestras(palestras);
+					String caminhoArquivo = moduloPersistencia.imprimirArquivo(palestrasMap, fileName, opcao);
+					StringBuilder mensagemSucesso = new StringBuilder();
+					mensagemSucesso.append("Arquivo " + fileName + " criado com sucesso!\n\n");
+					mensagemSucesso.append("O arquivo se encontra no caminho:\n\n");
+					mensagemSucesso.append(caminhoArquivo);
+					JOptionPane.showMessageDialog(null, mensagemSucesso.toString(), "Sucesso", JOptionPane.INFORMATION_MESSAGE);
+				} else {
+					opcaoValida = false;
+					StringBuilder mensagemErro = new StringBuilder();
+					mensagemErro.append("A opcao " + opcao + " é inválida.\n\n");
+					mensagemErro.append("Favor escolher uma opção válida!");
+					JOptionPane.showMessageDialog(null, mensagemErro.toString(), "Erro", JOptionPane.ERROR_MESSAGE);
+				}
+			} else {
+				if (userInput == null) {
+					opcaoValida = true;
+				} else {
+					StringBuilder mensagemErro = new StringBuilder();
+					mensagemErro.append("A opcao " + userInput + " é inválida.\n\n");
+					mensagemErro.append("Favor escolher uma opção válida!");
+					JOptionPane.showMessageDialog(null, mensagemErro.toString() + " não é uma opção ", "Erro", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		} while (!opcaoValida);
 	}
 	
 }

@@ -12,11 +12,6 @@ import br.unb.cic.ps.entidade.Palestrante;
 public class TratamentoImpl implements Tratamento {
 
 	Calendario moduloCalendario = new CalendarioImpl();
-	
-	@Override
-	public boolean tratamentoTest() {
-		return true;
-	}
 
 	@Override
 	public List<Palestra> tratarDadosPalestras(List<String[]> dados) {

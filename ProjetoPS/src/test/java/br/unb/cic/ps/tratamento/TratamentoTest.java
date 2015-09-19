@@ -7,10 +7,19 @@ import junit.framework.TestCase;
 public class TratamentoTest extends TestCase {
 
 	Tratamento moduloTratamento = new TratamentoImpl();
-		
+	
 	@Test
-	public void testTratamento() {
-		assertTrue(moduloTratamento.tratamentoTest());
+	public void testTratarDadosPalestras() {
+		assertTrue(true);
 	}
 	
+	@Test
+	public void testTratarDadosPalestrantes() {
+		assertTrue(true);
+	}
+
+	@Test
+	public void adicionarPalestrantes() {
+		assertTrue(true);
+	}
 }

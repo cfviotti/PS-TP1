@@ -12,11 +12,6 @@ import br.unb.cic.ps.entidade.Palestra;
 public class ControleImpl implements Controle {
 
 	@Override
-	public boolean controleTest() {
-		return true;
-	}
-
-	@Override
 	public void alocarPalestras(List<Palestra> palestras) {
 		for (Palestra palestra : palestras) {
 			for (Disponibilidade disponibilidade : palestra.getPalestrante().getDisponibilidades()) {
