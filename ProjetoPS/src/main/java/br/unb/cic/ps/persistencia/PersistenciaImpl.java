@@ -20,8 +20,8 @@ public class PersistenciaImpl implements Persistencia {
 	public void imprimirArquivo(Map<Integer, List<Palestra>> palestrasMap, String fileName, Integer opcao) {
 		try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(FILE_PATH + fileName))) {
 			if (opcao != 0) {
-				bufferedWriter.write("Calendario de Palestras (" + (++opcao) + "/2015)\n\n");
-				for (Palestra palestra : palestrasMap.get(opcao)) {
+				bufferedWriter.write("Calendario de Palestras (" + (opcao) + "/2015)\n\n");
+				for (Palestra palestra : palestrasMap.get(--opcao)) {
 					bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
 					bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.HOUR_OF_DAY)) + ":");
 					bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.MINUTE)) + "-");
