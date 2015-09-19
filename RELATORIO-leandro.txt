@@ -9,4 +9,5 @@ Data		Horas Trabalhadas	Tipo Tarefa					Descricao da Tarefa Realizada
 16/09/2015	2:00h				Revisar codigo do modulo	Revisar codigo dos modulos e das entidades, ajustar testes de acordo com estes
 17/09/2015	0:15h				Revisar codigo do modulo	Ajustes no modulo de persistencia e nome do arquivo de output
 18/09/2015	3:30h				Revisar codigo do modulo	Refatorar modulos, adicionar data de inicio e final na entidade Palestra, disponibilizar menu de opcoes ao usuario, completar arquivos input
-Total:		14:45h
+19/09/2015	3:00				Revisar codigo do modulo	Adicionar interface grafica, ajustar modulos e testes
+Total:		17:45h
