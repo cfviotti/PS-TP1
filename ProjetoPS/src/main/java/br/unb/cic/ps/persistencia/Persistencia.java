@@ -1,6 +1,7 @@
 package br.unb.cic.ps.persistencia;
 
 import java.util.List;
+import java.util.Map;
 
 import br.unb.cic.ps.entidade.Palestra;
 
@@ -10,6 +11,6 @@ public interface Persistencia {
 	
 	boolean persistenciaTest();
 	
-	void imprimirArquivo(List<Palestra> palestras, String fileName);
+	void imprimirArquivo(Map<Integer, List<Palestra>> palestras, String fileName, Integer opcao);
 	
 }
