@@ -110,5 +110,18 @@ public class TratamentoImpl implements Tratamento {
 		}
 		return palestrantes;
 	}
+
+	@Override
+	public void adicionarPalestrantes(List<Palestra> palestras, List<Palestrante> palestrantes) {
+		for (Palestra palestra : palestras) {
+			for (Palestrante palestrante : palestrantes) {
+				if (palestra.getPalestrante() != null && palestra.getPalestrante().getNome() != null) {
+					if (palestra.getPalestrante().getNome().equals(palestrante.getNome())) {
+						palestra.setPalestrante(palestrante);
+					}
+				}
+			}
+		}
+	}
 	
 }

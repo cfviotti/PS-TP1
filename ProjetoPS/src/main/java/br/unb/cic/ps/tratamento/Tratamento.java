@@ -13,4 +13,6 @@ public interface Tratamento {
 	
 	List<Palestrante> tratarDadosPalestrantes(List<String[]> dados);
 	
+	void adicionarPalestrantes(List<Palestra> palestras, List<Palestrante> palestrantes);
+	
 }
