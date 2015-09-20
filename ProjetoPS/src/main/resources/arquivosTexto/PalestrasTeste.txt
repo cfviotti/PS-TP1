@@ -1,0 +1,5 @@
+Nome: NomePalestra1.
+Palestrante: Palestrante1.
+Tema: TemaPalestra1.
+Local: Local1.
+Duracao: 1:30h.
