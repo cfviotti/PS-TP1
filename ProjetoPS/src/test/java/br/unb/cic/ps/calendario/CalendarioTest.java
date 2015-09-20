@@ -1,7 +1,5 @@
 package br.unb.cic.ps.calendario;
 
-import java.util.Calendar;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -32,12 +30,12 @@ public class CalendarioTest extends TestCase {
 	
 	@Before
 	public void inicializando() {
-		Calendar calendarTest = Calendar.getInstance();
+		assertTrue(true);
 	}
 	
 	@Test
 	public void testBuscarDataInicio() {
-		assertTrue(true);
+		
 	}
 	
 	@Test
