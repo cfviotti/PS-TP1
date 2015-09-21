@@ -1,12 +1,18 @@
 package br.unb.cic.ps.leitura;
 
+import static org.junit.Assert.assertFalse;
+
+import org.junit.Before;
 import org.junit.Test;
 
-import junit.framework.TestCase;
+public class LeituraTest {
 
-public class LeituraTest extends TestCase {
-
-	private Leitura moduloLeitura = new LeituraImpl();
+	private Leitura moduloLeitura;
+	
+	@Before
+	public void initialize() {
+		moduloLeitura = new LeituraImpl();
+	}
 	
 	@Test
 	public void testLerArquivoPalestras() {

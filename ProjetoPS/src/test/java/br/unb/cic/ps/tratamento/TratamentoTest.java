@@ -1,32 +1,39 @@
 package br.unb.cic.ps.tratamento;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 
+import br.unb.cic.ps.entidade.Palestra;
+import br.unb.cic.ps.entidade.Palestrante;
 import br.unb.cic.ps.leitura.Leitura;
 import br.unb.cic.ps.leitura.LeituraImpl;
 
-import java.util.ArrayList;
-import java.util.List;
+public class TratamentoTest {
 
-import junit.framework.TestCase;
-
-public class TratamentoTest extends TestCase {
-
-	Tratamento moduloTratamento = new TratamentoImpl();
-	Leitura moduloLeitura = new LeituraImpl();
-	List<String[]> dadosPalestras = new ArrayList<>();
-	List<String[]> dadosPalestrantes = new ArrayList<>();
+	Leitura moduloLeitura;
+	Tratamento moduloTratamento;
+	List<String[]> dadosPalestras;
+	List<String[]> dadosPalestrantes;
+	List<Palestra> palestras;
+	List<Palestrante> palestrantes;
 
 	@Before
-	public void inicializar() {
-		dadosPalestras = moduloLeitura.lerArquivoPalestras("PalestrasTeste.txt");
-		dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("PalestrantesTeste.txt");
+	public void initialize() {
+		moduloLeitura = new LeituraImpl();
+		moduloTratamento = new TratamentoImpl();
+		dadosPalestras = moduloLeitura.lerArquivoPalestras("Palestras.txt");
+		dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("Palestrantes.txt");
+		palestras = moduloTratamento.tratarDadosPalestras(dadosPalestras);
+		palestrantes = moduloTratamento.tratarDadosPalestrantes(dadosPalestrantes);
 	}
 	
 	@Test
 	public void testTratarDadosPalestras() {
-		inicializar();
 		assertTrue((moduloTratamento.tratarDadosPalestras(dadosPalestras)).toString().contains("Nome: NomePalestra1, " +
 				                                                                       "Nome do Palestrante: Palestrante1, " +
 				                                                                       "Tema: TemaPalestra1, " +
@@ -37,7 +44,6 @@ public class TratamentoTest extends TestCase {
 	
 	@Test
 	public void testTratarDadosPalestrantes() {
-		inicializar();
 		assertTrue((moduloTratamento.tratarDadosPalestrantes(dadosPalestrantes)).toString().contains("Nome: Palestrante1; " +
 				                                                                 "Disponibilidade: Dia da semana: 3; " +
 				                                                                 "Data de Inicio: Thu Jan 01 10:00:00 BRST 2015; " +
@@ -51,6 +57,9 @@ public class TratamentoTest extends TestCase {
 
 	@Test
 	public void adicionarPalestrantes() {
-		assertTrue(true);
+		moduloTratamento.adicionarPalestrantes(palestras, palestrantes);
+		for (Palestra palestra : palestras) {
+			assertNotNull(palestra.getPalestrante());
+		}
 	}
 }

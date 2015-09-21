@@ -32,11 +32,13 @@ public class ControleImpl implements Controle {
 
 	@Override
 	public void removerPalestrasSemHorario(List<Palestra> palestras) {
+		List<Palestra> palestrasRemovidas = new ArrayList<>();
 		for (Palestra palestra : palestras) {
 			if (palestra.getDataInicio() == null) {
-				palestras.remove(palestra);
+				palestrasRemovidas.add(palestra);
 			}
 		}
+		palestras.removeAll(palestrasRemovidas);
 	}
 
 	@Override

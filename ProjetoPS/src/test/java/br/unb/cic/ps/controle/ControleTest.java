@@ -1,10 +1,12 @@
 package br.unb.cic.ps.controle;
 
-import java.util.ArrayList;
-import java.util.List;
+import static org.junit.Assert.assertNotNull;
 
-import org.junit.Test;
+import java.util.List;
+import java.util.Map;
+
 import org.junit.Before;
+import org.junit.Test;
 
 import br.unb.cic.ps.entidade.Palestra;
 import br.unb.cic.ps.entidade.Palestrante;
@@ -13,20 +15,23 @@ import br.unb.cic.ps.leitura.LeituraImpl;
 import br.unb.cic.ps.tratamento.Tratamento;
 import br.unb.cic.ps.tratamento.TratamentoImpl;
 
-import junit.framework.TestCase;
+public class ControleTest {
 
-public class ControleTest extends TestCase {
-
-	Controle moduloControle = new ControleImpl();
-	Leitura moduloLeitura = new LeituraImpl();
-	Tratamento moduloTratamento = new TratamentoImpl();
-	List<Palestra> palestras = new ArrayList<Palestra>();
-	List<Palestrante> palestrantes = new ArrayList<Palestrante>();
+	private Controle moduloControle;
+	private Leitura moduloLeitura;
+	private Tratamento moduloTratamento;
+	private List<String[]> dadosPalestras;
+	private List<String[]> dadosPalestrantes;
+	private List<Palestra> palestras;
+	private List<Palestrante> palestrantes;
 	
 	@Before
-	private void inicializar() {
-		List<String[]> dadosPalestras = moduloLeitura.lerArquivoPalestras("PalestrasTeste.txt");
-		List<String[]> dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("PalestrantesTeste.txt");
+	public void initialize() {
+		moduloControle = new ControleImpl();
+		moduloLeitura = new LeituraImpl();
+		moduloTratamento = new TratamentoImpl();
+		dadosPalestras = moduloLeitura.lerArquivoPalestras("Palestras.txt");
+		dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("Palestrantes.txt");
 		palestras = moduloTratamento.tratarDadosPalestras(dadosPalestras);
 		palestrantes = moduloTratamento.tratarDadosPalestrantes(dadosPalestrantes);
 		moduloTratamento.adicionarPalestrantes(palestras, palestrantes);
@@ -34,23 +39,24 @@ public class ControleTest extends TestCase {
 	
 	@Test
 	public void testAlocarPalestras() {
-		inicializar();
 		moduloControle.alocarPalestras(palestras);
-		assertTrue(true);
+		assertNotNull(palestras.get(0).getDataInicio());
 	}
 	
 	@Test
 	public void testRemoverPalestrasSemHorario() {
-		inicializar();
+		moduloControle.alocarPalestras(palestras);
 		moduloControle.removerPalestrasSemHorario(palestras);
-		assertTrue(true);
+		for (Palestra palestra : palestras) {
+			assertNotNull(palestra.getDataInicio());
+		}
 	}
 	
 	@Test
 	public void testGerarMapaPalestras() {
-		inicializar();
-		moduloControle.gerarMapaPalestras(palestras);
-		assertTrue(true);
+		moduloControle.removerPalestrasSemHorario(palestras);
+		Map<Integer, List<Palestra>> palestrasMap = moduloControle.gerarMapaPalestras(palestras);
+		assertNotNull(palestrasMap);
 	}
 
 }

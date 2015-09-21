@@ -1,13 +1,19 @@
 package br.unb.cic.ps.persistencia;
 
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
 import org.junit.Test;
 
-import junit.framework.TestCase;
+public class PersistenciaTest {
 
-public class PersistenciaTest extends TestCase {
+	Persistencia moduloPersistencia;
 
-	Persistencia moduloPersistencia = new PersistenciaImpl();
-
+	@Before
+	public void initialize() {
+		moduloPersistencia = new PersistenciaImpl();
+	}
+	
 	@Test
 	public void testImprimirArquivo() {
 		assertTrue(true);
