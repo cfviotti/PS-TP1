@@ -14,20 +14,19 @@ import junit.framework.TestCase;
 public class TratamentoTest extends TestCase {
 
 	Tratamento moduloTratamento = new TratamentoImpl();
-	Leitura    moduloLeitura    = new LeituraImpl   ();
-	
-	List<String[]> dadosPalestras    = new ArrayList<>();
+	Leitura moduloLeitura = new LeituraImpl();
+	List<String[]> dadosPalestras = new ArrayList<>();
 	List<String[]> dadosPalestrantes = new ArrayList<>();
 
 	@Before
-	public void inicializando() {
-		dadosPalestras    = moduloLeitura.lerArquivoPalestras   ("PalestrasTeste.txt"   );
+	public void inicializar() {
+		dadosPalestras = moduloLeitura.lerArquivoPalestras("PalestrasTeste.txt");
 		dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("PalestrantesTeste.txt");
 	}
 	
 	@Test
 	public void testTratarDadosPalestras() {
-		inicializando();
+		inicializar();
 		assertTrue((moduloTratamento.tratarDadosPalestras(dadosPalestras)).toString().contains("Nome: NomePalestra1, " +
 				                                                                       "Nome do Palestrante: Palestrante1, " +
 				                                                                       "Tema: TemaPalestra1, " +
@@ -38,7 +37,7 @@ public class TratamentoTest extends TestCase {
 	
 	@Test
 	public void testTratarDadosPalestrantes() {
-		inicializando();
+		inicializar();
 		assertTrue((moduloTratamento.tratarDadosPalestrantes(dadosPalestrantes)).toString().contains("Nome: Palestrante1; " +
 				                                                                 "Disponibilidade: Dia da semana: 3; " +
 				                                                                 "Data de Inicio: Thu Jan 01 10:00:00 BRST 2015; " +

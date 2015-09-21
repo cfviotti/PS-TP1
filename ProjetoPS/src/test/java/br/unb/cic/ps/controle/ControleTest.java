@@ -17,21 +17,18 @@ import junit.framework.TestCase;
 
 public class ControleTest extends TestCase {
 
-	Controle   moduloControle   = new ControleImpl  ();
-	Leitura    moduloLeitura    = new LeituraImpl   ();
+	Controle moduloControle = new ControleImpl();
+	Leitura moduloLeitura = new LeituraImpl();
 	Tratamento moduloTratamento = new TratamentoImpl();
-	
-	List<Palestra>    palestras    = new ArrayList<Palestra>   ();
+	List<Palestra> palestras = new ArrayList<Palestra>();
 	List<Palestrante> palestrantes = new ArrayList<Palestrante>();
 	
 	@Before
 	private void inicializar() {
-		List<String[]> dadosPalestras    = moduloLeitura.lerArquivoPalestras   ("PalestrasTeste.txt"   );
+		List<String[]> dadosPalestras = moduloLeitura.lerArquivoPalestras("PalestrasTeste.txt");
 		List<String[]> dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("PalestrantesTeste.txt");
-		
-		palestras    = moduloTratamento.tratarDadosPalestras   (dadosPalestras   );
+		palestras = moduloTratamento.tratarDadosPalestras(dadosPalestras);
 		palestrantes = moduloTratamento.tratarDadosPalestrantes(dadosPalestrantes);
-		
 		moduloTratamento.adicionarPalestrantes(palestras, palestrantes);
 	}
 	
