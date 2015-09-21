@@ -9,9 +9,12 @@ import br.unb.cic.ps.entidade.Disponibilidade;
 import br.unb.cic.ps.entidade.Palestra;
 import br.unb.cic.ps.entidade.Palestrante;
 
+/**
+ * A Classe TratamentoImpl.
+ */
 public class TratamentoImpl implements Tratamento {
 
-	Calendario moduloCalendario = new CalendarioImpl();
+	private Calendario moduloCalendario = new CalendarioImpl();
 
 	@Override
 	public List<Palestra> tratarDadosPalestras(List<String[]> dados) {

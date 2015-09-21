@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A Classe LeituraImpl.
+ */
 public class LeituraImpl implements Leitura {
 
 	@Override

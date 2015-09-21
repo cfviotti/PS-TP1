@@ -9,6 +9,9 @@ import java.util.TreeMap;
 import br.unb.cic.ps.entidade.Disponibilidade;
 import br.unb.cic.ps.entidade.Palestra;
 
+/**
+ * A Classe ControleImpl.
+ */
 public class ControleImpl implements Controle {
 
 	@Override

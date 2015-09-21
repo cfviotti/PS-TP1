@@ -16,8 +16,16 @@ import br.unb.cic.ps.persistencia.PersistenciaImpl;
 import br.unb.cic.ps.tratamento.Tratamento;
 import br.unb.cic.ps.tratamento.TratamentoImpl;
 
+/**
+ * Classe Main.
+ */
 public class Main {
 
+	/**
+	 * Método main
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Leitura moduloLeitura = new LeituraImpl();
 		Tratamento moduloTratamento = new TratamentoImpl();

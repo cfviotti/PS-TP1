@@ -10,6 +10,9 @@ import java.util.Map;
 
 import br.unb.cic.ps.entidade.Palestra;
 
+/**
+ * A Classe PersistenciaImpl.
+ */
 public class PersistenciaImpl implements Persistencia {
 	
 	@Override

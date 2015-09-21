@@ -5,6 +5,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+/**
+ * A Classe CalendarioImpl.
+ */
 public class CalendarioImpl implements Calendario {
 
 	@Override

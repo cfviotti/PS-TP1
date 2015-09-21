@@ -2,6 +2,9 @@ package br.unb.cic.ps.entidade;
 
 import java.util.List;
 
+/**
+ * A Classe Palestrante.
+ */
 public class Palestrante {
 
 	private String nome;
@@ -20,18 +23,38 @@ public class Palestrante {
 		return stringBuilder.toString();
 	}
 	
+	/**
+	 * Retorna uma instância de nome.
+	 * 
+	 * @return uma instância de nome
+	 */
 	public String getNome() {
 		return nome;
 	}
 
+	/**
+	 * Atualizar uma instância de nome.
+	 * 
+	 * @param nome, o nome
+	 */
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
+	/**
+	 * Retorna uma instância de disponibilidades.
+	 * 
+	 * @return uma instância de disponibilidades
+	 */
 	public List<Disponibilidade> getDisponibilidades() {
 		return disponibilidades;
 	}
 
+	/**
+	 * Atualizar uma instância de disponibilidades.
+	 * 
+	 * @param disponibilidades, o disponibilidades
+	 */
 	public void setDisponibilidades(List<Disponibilidade> disponibilidades) {
 		this.disponibilidades = disponibilidades;
 	}
