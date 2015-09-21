@@ -1,6 +1,5 @@
 package br.unb.cic.ps.calendario;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import junit.framework.TestCase;
@@ -28,14 +27,9 @@ public class CalendarioTest extends TestCase {
 		assertTrue(moduloCalendario.buscarDiaSemana("Sab")==SABADO );
 	}
 	
-	@Before
-	public void inicializando() {
-		assertTrue(true);
-	}
-	
 	@Test
 	public void testBuscarDataInicio() {
-		
+		assertTrue(true);
 	}
 	
 	@Test

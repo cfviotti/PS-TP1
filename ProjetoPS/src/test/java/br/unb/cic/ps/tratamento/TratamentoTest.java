@@ -14,14 +14,14 @@ import junit.framework.TestCase;
 public class TratamentoTest extends TestCase {
 
 	Tratamento moduloTratamento = new TratamentoImpl();
-	Leitura moduloLeitura = new LeituraImpl();
+	Leitura    moduloLeitura    = new LeituraImpl   ();
 	
-	List<String[]> dadosPalestras = new ArrayList<>();
+	List<String[]> dadosPalestras    = new ArrayList<>();
 	List<String[]> dadosPalestrantes = new ArrayList<>();
 
 	@Before
 	public void inicializando() {
-		dadosPalestras = moduloLeitura.lerArquivoPalestras("PalestrasTeste.txt");
+		dadosPalestras    = moduloLeitura.lerArquivoPalestras   ("PalestrasTeste.txt"   );
 		dadosPalestrantes = moduloLeitura.lerArquivoPalestrantes("PalestrantesTeste.txt");
 	}
 	

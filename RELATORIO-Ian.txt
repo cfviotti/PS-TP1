@@ -1,0 +1,7 @@
+Data		Horas Trabalhadas	Tipo Tarefa						Descricao da Tarefa Realizada
+07/09/2015	2h					Gerenciando ambiente        	Baixando repositório e gerenciando as versões utilizadas no projeto
+08/09/2015	1h					Redigindo casos de testes		Criando casos de teste dos módulos
+14/09/2015	2h					Dividindo tarefas				Dividindo os módulos a serem implementados entre membros do grupo
+19/09/2015	4h  				Revisando códigos dos módulos	Revisando os códigos
+20/09/2015  4h					Checando úlitmos testes			últimas pequenas alterações nos testes		
+Total:		13h
