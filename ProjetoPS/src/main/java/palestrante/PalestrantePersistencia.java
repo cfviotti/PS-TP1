@@ -1,5 +1,5 @@
 package palestrante;
 
-public interface PalestrantePersistencia extends Palestrante {
+public interface PalestrantePersistencia extends PalestranteComponent {
 
 }

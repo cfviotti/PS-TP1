@@ -1,5 +1,5 @@
 package localidade;
 
-public interface LocalidadeTratamento extends Localidade {
+public interface LocalidadeTratamento extends LocalidadeComponent {
 
 }

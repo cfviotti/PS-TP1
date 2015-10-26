@@ -1,5 +1,17 @@
 package palestra;
 
-public interface PalestraTratamento extends Palestra {
+import java.util.List;
 
+import br.unb.cic.ps.entidade.Palestra;
+
+public interface PalestraTratamento extends PalestraComponent {
+
+	/**
+	 * Trata os dados das palestras, retornando uma lista de palestras.
+	 * 
+	 * @param dados, os dados das palestras
+	 * @return uma lista de palestras
+	 */
+	List<Palestra> tratarDadosPalestras(List<String[]> dados);
+	
 }

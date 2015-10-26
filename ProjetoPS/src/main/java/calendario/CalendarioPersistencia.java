@@ -1,5 +1,5 @@
 package calendario;
 
-public interface CalendarioPersistencia extends Calendario {
+public interface CalendarioPersistencia extends CalendarioComponent {
 
 }

@@ -1,5 +1,5 @@
 package palestra;
 
-public interface PalestraPersistencia extends Palestra {
+public interface PalestraPersistencia extends PalestraComponent {
 
 }
