@@ -50,6 +50,8 @@ public class PersistenciaTest {
 		String fileName = "CalendarioPalestras.txt";
 		String filePath = moduloPersistencia.imprimirArquivo(palestrasMap, fileName, 0);
 		assertNotNull(filePath);
+		filePath = moduloPersistencia.imprimirArquivo(palestrasMap, fileName, 1);
+		assertNotNull(filePath);
 	}
 	
 }
