@@ -12,4 +12,7 @@ Data		Horas Trabalhadas	Tipo Tarefa					Descricao da Tarefa Realizada
 19/09/2015	3:00				Revisar codigo do modulo	Adicionar interface grafica, ajustar modulos e testes
 20/09/2015	1:00				Revisar casos de teste		Revisar casos de testes
 21/09/2015	6:00				Revisar casos de teste		Revisar casos de testes
-Total:		24:45h
+21/10/2015	2:00				Projetar					Instalando findbugs e eclemma
+27/10/2015 	1:00				Codificar modulo			Refatorando modulos
+28/10/2015 	2:00				Codificar modulo			Refatorando modulos
+Total:		29:45h
