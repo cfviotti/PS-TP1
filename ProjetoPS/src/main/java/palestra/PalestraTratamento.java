@@ -2,7 +2,7 @@ package palestra;
 
 import java.util.List;
 
-import br.unb.cic.ps.entidade.Palestra;
+import entidade.Palestra;
 
 public interface PalestraTratamento extends PalestraComponent {
 

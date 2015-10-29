@@ -2,7 +2,8 @@ package palestrante;
 
 import java.util.List;
 
-import br.unb.cic.ps.entidade.Palestrante;
+import entidade.Palestra;
+import entidade.Palestrante;
 
 public interface PalestranteTratamento extends PalestranteComponent {
 
@@ -13,5 +14,13 @@ public interface PalestranteTratamento extends PalestranteComponent {
 	 * @return uma lista de palestrantes
 	 */
 	List<Palestrante> tratarDadosPalestrantes(List<String[]> dados);
+	
+	/**
+	 * Adiciona os palestrantes às suas respectivas palestras.
+	 * 
+	 * @param palestras, as palestras
+	 * @param palestrantes, os palestrantes
+	 */
+	void adicionarPalestrantes(List<Palestra> palestras, List<Palestrante> palestrantes);
 	
 }

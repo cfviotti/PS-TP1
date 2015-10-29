@@ -3,8 +3,8 @@ package palestra;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.unb.cic.ps.entidade.Palestra;
-import br.unb.cic.ps.entidade.Palestrante;
+import entidade.Palestra;
+import entidade.Palestrante;
 
 public class PalestraTratamentoImpl implements PalestraTratamento {
 
@@ -32,12 +32,6 @@ public class PalestraTratamentoImpl implements PalestraTratamento {
 				palestra.setTema(line[1]);
 				for (int i = 2; i < line.length; i++) {
 					palestra.setTema(palestra.getTema() + " " + line[i]);
-				}
-				break;
-			case "Local:":
-				palestra.setLocal(line[1]);
-				for (int i = 2; i < line.length; i++) {
-					palestra.setLocal(palestra.getLocal() + " " + line[i]);
 				}
 				break;
 			case "Duracao:":

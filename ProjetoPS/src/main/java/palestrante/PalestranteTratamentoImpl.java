@@ -3,10 +3,11 @@ package palestrante;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.unb.cic.ps.entidade.Disponibilidade;
-import br.unb.cic.ps.entidade.Palestrante;
 import calendario.CalendarioTratamento;
 import calendario.CalendarioTratamentoImpl;
+import entidade.Disponibilidade;
+import entidade.Palestra;
+import entidade.Palestrante;
 
 public class PalestranteTratamentoImpl implements PalestranteTratamento {
 
@@ -59,6 +60,19 @@ public class PalestranteTratamentoImpl implements PalestranteTratamento {
 			}
 		}
 		return palestrantes;
+	}
+	
+	@Override
+	public void adicionarPalestrantes(List<Palestra> palestras, List<Palestrante> palestrantes) {
+		for (Palestra palestra : palestras) {
+			for (Palestrante palestrante : palestrantes) {
+				if (palestra.getPalestrante() != null && palestra.getPalestrante().getNome() != null) {
+					if (palestra.getPalestrante().getNome().equals(palestrante.getNome())) {
+						palestra.setPalestrante(palestrante);
+					}
+				}
+			}
+		}
 	}
 	
 }
