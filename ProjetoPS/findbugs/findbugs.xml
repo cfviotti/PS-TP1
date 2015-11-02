@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BugCollection version="3.0.1" threshold="low" effort="max">
+   <file classname="calendario.CalendarioPersistenciaImpl">
+      <BugInstance type="DM_DEFAULT_ENCODING" priority="High" category="I18N" message="Found reliance on default encoding in calendario.CalendarioPersistenciaImpl.imprimirArquivo(Map, String, Integer): new java.io.FileWriter(File)" lineNumber="18" />
+   </file>
+   <file classname="calendario.CalendarioTratamentoImpl">
+      <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="High" category="PERFORMANCE" message="Boxing/unboxing to parse a primitive calendario.CalendarioTratamentoImpl.buscarDataFim(String, String)" lineNumber="66" />
+      <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="High" category="PERFORMANCE" message="Boxing/unboxing to parse a primitive calendario.CalendarioTratamentoImpl.buscarDataInicio(String, String)" lineNumber="50" />
+      <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="Normal" category="STYLE" message="Switch statement found in calendario.CalendarioTratamentoImpl.buscarDiaSemana(String) where default case is missing" lineNumber="13" />
+   </file>
+   <file classname="entidade.Disponibilidade">
+      <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="Disponibilidade.dataFim not initialized in constructor and dereferenced in entidade.Disponibilidade.toString()" lineNumber="20" />
+      <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="Disponibilidade.dataInicio not initialized in constructor and dereferenced in entidade.Disponibilidade.toString()" lineNumber="20" />
+   </file>
+   <file classname="entidade.Localidade">
+      <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="Localidade.disponibilidades not initialized in constructor and dereferenced in entidade.Localidade.toString()" lineNumber="22" />
+   </file>
+   <file classname="entidade.Palestra">
+      <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="Normal" category="BAD_PRACTICE" message="entidade.Palestra defines compareTo(Palestra) and uses Object.equals()" lineNumber="36" />
+      <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="Palestra.dataInicio not initialized in constructor and dereferenced in entidade.Palestra.compareTo(Palestra)" lineNumber="36" />
+      <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="Palestra.palestrante not initialized in constructor and dereferenced in entidade.Palestra.toString()" lineNumber="26" />
+   </file>
+   <file classname="entidade.Palestrante">
+      <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="Palestrante.disponibilidades not initialized in constructor and dereferenced in entidade.Palestrante.toString()" lineNumber="20" />
+   </file>
+   <file classname="localidade.LocalidadeLeituraImpl">
+      <BugInstance type="DM_DEFAULT_ENCODING" priority="High" category="I18N" message="Found reliance on default encoding in localidade.LocalidadeLeituraImpl.lerArquivoLocalidades(String): new java.io.FileReader(String)" lineNumber="14" />
+   </file>
+   <file classname="localidade.LocalidadeTratamentoImpl">
+      <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="Normal" category="STYLE" message="Switch statement found in localidade.LocalidadeTratamentoImpl.tratarDadosLocalidades(List) where default case is missing" lineNumber="20" />
+   </file>
+   <file classname="palestra.PalestraLeituraImpl">
+      <BugInstance type="DM_DEFAULT_ENCODING" priority="High" category="I18N" message="Found reliance on default encoding in palestra.PalestraLeituraImpl.lerArquivoPalestras(String): new java.io.FileReader(String)" lineNumber="14" />
+   </file>
+   <file classname="palestra.PalestraTratamentoImpl">
+      <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="High" category="PERFORMANCE" message="Boxing/unboxing to parse a primitive palestra.PalestraTratamentoImpl.tratarDadosPalestras(List)" lineNumber="39" />
+      <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="Normal" category="STYLE" message="Switch statement found in palestra.PalestraTratamentoImpl.tratarDadosPalestras(List) where default case is missing" lineNumber="16" />
+   </file>
+   <file classname="palestrante.PalestranteLeituraImpl">
+      <BugInstance type="DM_DEFAULT_ENCODING" priority="High" category="I18N" message="Found reliance on default encoding in palestrante.PalestranteLeituraImpl.lerArquivoPalestrantes(String): new java.io.FileReader(String)" lineNumber="14" />
+   </file>
+   <file classname="palestrante.PalestranteTratamentoImpl">
+      <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="Normal" category="STYLE" message="Switch statement found in palestrante.PalestranteTratamentoImpl.tratarDadosPalestrantes(List) where default case is missing" lineNumber="21" />
+   </file>
+   <Error />
+   <Project>
+      <SrcDir>C:\Users\Leandro Bergmann\Documents\UnB\Ciencia_da_Computacao\2015_2\Programacao_Sistematica\PS-TP1\ProjetoPS\src\main\java</SrcDir>
+      <SrcDir>C:\Users\Leandro Bergmann\Documents\UnB\Ciencia_da_Computacao\2015_2\Programacao_Sistematica\PS-TP1\ProjetoPS\target\generated-sources\annotations</SrcDir>
+      <SrcDir>C:\Users\Leandro Bergmann\Documents\UnB\Ciencia_da_Computacao\2015_2\Programacao_Sistematica\PS-TP1\ProjetoPS\src\test\java</SrcDir>
+   </Project>
+</BugCollection>

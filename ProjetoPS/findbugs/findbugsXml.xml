@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BugCollection timestamp="1446485244794" analysisTimestamp="1446485261104" sequence="0" release="" version="3.0.1">
+   <Project projectName="ProjetoPS">
+      <Jar>C:\Users\Leandro Bergmann\Documents\UnB\Ciencia_da_Computacao\2015_2\Programacao_Sistematica\PS-TP1\ProjetoPS\target\classes</Jar>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\mojo\findbugs-maven-plugin\3.0.2\findbugs-maven-plugin-3.0.2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\com\google\code\findbugs\findbugs\3.0.1\findbugs-3.0.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\com\google\code\findbugs\bcel-findbugs\6.0\bcel-findbugs-6.0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\com\google\code\findbugs\jFormatString\2.0.1\jFormatString-2.0.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\ow2\asm\asm-debug-all\5.0.2\asm-debug-all-5.0.2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\ow2\asm\asm-commons\5.0.2\asm-commons-5.0.2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\ow2\asm\asm-tree\5.0.2\asm-tree-5.0.2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\ow2\asm\asm\5.0.2\asm-5.0.2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\com\apple\AppleJavaExtensions\1.4\AppleJavaExtensions-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\jaxen\jaxen\1.1.6\jaxen-1.1.6.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\ant\ant\1.9.4\ant-1.9.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\ant\ant-launcher\1.9.4\ant-launcher-1.9.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\groovy\groovy-all\2.4.3\groovy-all-2.4.3.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.1\maven-reporting-impl-2.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-project\2.0.10\maven-project-2.0.10.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-settings\2.0.10\maven-settings-2.0.10.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-profile\2.0.10\maven-profile-2.0.10.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-plugin-registry\2.0.10\maven-plugin-registry-2.0.10.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.1\plexus-interpolation-1.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-logging\commons-logging\1.0.4\commons-logging-1.0.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-plugin-api\2.0\maven-plugin-api-2.0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-plugin-descriptor\2.2.1\maven-plugin-descriptor-2.2.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-artifact\2.2.1\maven-artifact-2.2.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\doxia\doxia-core\1.4\doxia-core-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.4\doxia-logging-api-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\httpcomponents\httpclient\4.0.2\httpclient-4.0.2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-codec\commons-codec\1.3\commons-codec-1.3.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\httpcomponents\httpcore\4.0.1\httpcore-4.0.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.4\doxia-sink-api-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.4\doxia-decoration-model-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.4\doxia-site-renderer-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.4\doxia-module-xhtml-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\doxia\doxia-module-fml\1.4\doxia-module-fml-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-7\plexus-i18n-1.0-beta-7.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.7\plexus-velocity-1.1.7.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\velocity\velocity\1.5\velocity-1.5.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\sslext\sslext\1.2-0\sslext-1.2-0.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\struts\struts-core\1.3.8\struts-core-1.3.8.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\antlr\antlr\2.7.2\antlr-2.7.2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\struts\struts-taglib\1.3.8\struts-taglib-1.3.8.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\struts\struts-tiles\1.3.8\struts-tiles-1.3.8.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\shared\maven-doxia-tools\1.2.1\maven-doxia-tools-1.2.1.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\commons-io\commons-io\1.4\commons-io-1.4.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.6\maven-artifact-manager-2.0.6.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.6\maven-repository-metadata-2.0.6.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\apache\maven\maven-model\2.0.6\maven-model-2.0.6.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\plexus\plexus-resources\1.0-alpha-7\plexus-resources-1.0-alpha-7.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.6\plexus-utils-1.5.6.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\sonatype\plexus\plexus-build-api\0.0.7\plexus-build-api-0.0.7.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\junit\junit\4.12\junit-4.12.jar</AuxClasspathEntry>
+      <AuxClasspathEntry>C:\Users\Leandro Bergmann\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar</AuxClasspathEntry>
+      <SrcDir>C:\Users\Leandro Bergmann\Documents\UnB\Ciencia_da_Computacao\2015_2\Programacao_Sistematica\PS-TP1\ProjetoPS\src\main\java</SrcDir>
+      <SrcDir>C:\Users\Leandro Bergmann\Documents\UnB\Ciencia_da_Computacao\2015_2\Programacao_Sistematica\PS-TP1\ProjetoPS\target\generated-sources\annotations</SrcDir>
+      <WrkDir>C:\Users\Leandro Bergmann\Documents\UnB\Ciencia_da_Computacao\2015_2\Programacao_Sistematica\PS-TP1\ProjetoPS\target</WrkDir>
+   </Project>
+   <BugInstance rank="19" category="I18N" instanceHash="4025ec5a0b7e6c11f77f32924146db52" instanceOccurrenceNum="0" priority="1" abbrev="Dm" type="DM_DEFAULT_ENCODING" instanceOccurrenceMax="0">
+      <ShortMessage>Reliance on default encoding</ShortMessage>
+      <LongMessage>Found reliance on default encoding in calendario.CalendarioPersistenciaImpl.imprimirArquivo(Map, String, Integer): new java.io.FileWriter(File)</LongMessage>
+      <Class classname="calendario.CalendarioPersistenciaImpl" primary="true">
+         <SourceLine start="13" classname="calendario.CalendarioPersistenciaImpl" sourcepath="calendario/CalendarioPersistenciaImpl.java" sourcefile="CalendarioPersistenciaImpl.java" end="77">
+            <Message>At CalendarioPersistenciaImpl.java:[lines 13-77]</Message>
+         </SourceLine>
+         <Message>In class calendario.CalendarioPersistenciaImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="calendario.CalendarioPersistenciaImpl" name="imprimirArquivo" primary="true" signature="(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/String;">
+         <SourceLine endBytecode="1851" startBytecode="0" start="17" classname="calendario.CalendarioPersistenciaImpl" sourcepath="calendario/CalendarioPersistenciaImpl.java" sourcefile="CalendarioPersistenciaImpl.java" end="73" />
+         <Message>In method calendario.CalendarioPersistenciaImpl.imprimirArquivo(Map, String, Integer)</Message>
+      </Method>
+      <Method isStatic="false" classname="java.io.FileWriter" name="&lt;init&gt;" role="METHOD_CALLED" signature="(Ljava/io/File;)V">
+         <SourceLine endBytecode="40" startBytecode="0" start="90" classname="java.io.FileWriter" sourcepath="java/io/FileWriter.java" sourcefile="FileWriter.java" end="91" />
+         <Message>Called method new java.io.FileWriter(File)</Message>
+      </Method>
+      <SourceLine endBytecode="38" startBytecode="38" start="18" classname="calendario.CalendarioPersistenciaImpl" primary="true" sourcepath="calendario/CalendarioPersistenciaImpl.java" sourcefile="CalendarioPersistenciaImpl.java" end="18">
+         <Message>At CalendarioPersistenciaImpl.java:[line 18]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="16" category="PERFORMANCE" instanceHash="66edbb634723d520a677dcfc8d67437f" instanceOccurrenceNum="0" priority="1" abbrev="Bx" type="DM_BOXED_PRIMITIVE_FOR_PARSING" instanceOccurrenceMax="0">
+      <ShortMessage>Boxing/unboxing to parse a primitive</ShortMessage>
+      <LongMessage>Boxing/unboxing to parse a primitive calendario.CalendarioTratamentoImpl.buscarDataFim(String, String)</LongMessage>
+      <Class classname="calendario.CalendarioTratamentoImpl" primary="true">
+         <SourceLine start="8" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="77">
+            <Message>At CalendarioTratamentoImpl.java:[lines 8-77]</Message>
+         </SourceLine>
+         <Message>In class calendario.CalendarioTratamentoImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="calendario.CalendarioTratamentoImpl" name="buscarDataFim" primary="true" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Calendar;">
+         <SourceLine endBytecode="281" startBytecode="0" start="57" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="68" />
+         <Message>In method calendario.CalendarioTratamentoImpl.buscarDataFim(String, String)</Message>
+      </Method>
+      <Method isStatic="false" classname="java.lang.Integer" name="intValue" role="METHOD_CALLED" signature="()I">
+         <SourceLine endBytecode="28" startBytecode="0" start="701" classname="java.lang.Integer" sourcepath="java/lang/Integer.java" sourcefile="Integer.java" end="701" />
+         <Message>Called method Integer.intValue()</Message>
+      </Method>
+      <Method isStatic="true" classname="java.lang.Integer" name="parseInt" role="SHOULD_CALL" signature="(Ljava/lang/String;)I">
+         <Message>Should call Integer.parseInt(String) instead</Message>
+      </Method>
+      <SourceLine endBytecode="64" startBytecode="64" start="66" classname="calendario.CalendarioTratamentoImpl" primary="true" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="66">
+         <Message>At CalendarioTratamentoImpl.java:[line 66]</Message>
+      </SourceLine>
+      <SourceLine endBytecode="80" startBytecode="80" start="67" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE" sourcefile="CalendarioTratamentoImpl.java" end="67">
+         <Message>Another occurrence at CalendarioTratamentoImpl.java:[line 67]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="16" category="PERFORMANCE" instanceHash="bf33bb517ff3e220fb4dc5f146db931e" instanceOccurrenceNum="0" priority="1" abbrev="Bx" type="DM_BOXED_PRIMITIVE_FOR_PARSING" instanceOccurrenceMax="0">
+      <ShortMessage>Boxing/unboxing to parse a primitive</ShortMessage>
+      <LongMessage>Boxing/unboxing to parse a primitive calendario.CalendarioTratamentoImpl.buscarDataInicio(String, String)</LongMessage>
+      <Class classname="calendario.CalendarioTratamentoImpl" primary="true">
+         <SourceLine start="8" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="77">
+            <Message>At CalendarioTratamentoImpl.java:[lines 8-77]</Message>
+         </SourceLine>
+         <Message>In class calendario.CalendarioTratamentoImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="calendario.CalendarioTratamentoImpl" name="buscarDataInicio" primary="true" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Calendar;">
+         <SourceLine endBytecode="281" startBytecode="0" start="41" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="52" />
+         <Message>In method calendario.CalendarioTratamentoImpl.buscarDataInicio(String, String)</Message>
+      </Method>
+      <Method isStatic="false" classname="java.lang.Integer" name="intValue" role="METHOD_CALLED" signature="()I">
+         <SourceLine endBytecode="28" startBytecode="0" start="701" classname="java.lang.Integer" sourcepath="java/lang/Integer.java" sourcefile="Integer.java" end="701" />
+         <Message>Called method Integer.intValue()</Message>
+      </Method>
+      <Method isStatic="true" classname="java.lang.Integer" name="parseInt" role="SHOULD_CALL" signature="(Ljava/lang/String;)I">
+         <Message>Should call Integer.parseInt(String) instead</Message>
+      </Method>
+      <SourceLine endBytecode="64" startBytecode="64" start="50" classname="calendario.CalendarioTratamentoImpl" primary="true" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="50">
+         <Message>At CalendarioTratamentoImpl.java:[line 50]</Message>
+      </SourceLine>
+      <SourceLine endBytecode="80" startBytecode="80" start="51" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE" sourcefile="CalendarioTratamentoImpl.java" end="51">
+         <Message>Another occurrence at CalendarioTratamentoImpl.java:[line 51]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="19" category="STYLE" instanceHash="d9b38ab0530e75f4545aade16ccdf21d" instanceOccurrenceNum="0" priority="2" abbrev="SF" type="SF_SWITCH_NO_DEFAULT" instanceOccurrenceMax="0">
+      <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+      <LongMessage>Switch statement found in calendario.CalendarioTratamentoImpl.buscarDiaSemana(String) where default case is missing</LongMessage>
+      <Class classname="calendario.CalendarioTratamentoImpl" primary="true">
+         <SourceLine start="8" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="77">
+            <Message>At CalendarioTratamentoImpl.java:[lines 8-77]</Message>
+         </SourceLine>
+         <Message>In class calendario.CalendarioTratamentoImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="calendario.CalendarioTratamentoImpl" name="buscarDiaSemana" primary="true" signature="(Ljava/lang/String;)I">
+         <SourceLine endBytecode="414" startBytecode="0" start="12" classname="calendario.CalendarioTratamentoImpl" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="36" />
+         <Message>In method calendario.CalendarioTratamentoImpl.buscarDiaSemana(String)</Message>
+      </Method>
+      <SourceLine endBytecode="257" startBytecode="181" start="13" classname="calendario.CalendarioTratamentoImpl" primary="true" sourcepath="calendario/CalendarioTratamentoImpl.java" sourcefile="CalendarioTratamentoImpl.java" end="33">
+         <Message>At CalendarioTratamentoImpl.java:[lines 13-33]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="20" category="STYLE" instanceHash="dcea4440ac96fc5ee9f149ca395dde1e" instanceOccurrenceNum="0" priority="3" abbrev="UwF" type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" instanceOccurrenceMax="0">
+      <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+      <LongMessage>Disponibilidade.dataFim not initialized in constructor and dereferenced in entidade.Disponibilidade.toString()</LongMessage>
+      <Class classname="entidade.Disponibilidade" primary="true">
+         <SourceLine start="8" classname="entidade.Disponibilidade" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java" end="97">
+            <Message>At Disponibilidade.java:[lines 8-97]</Message>
+         </SourceLine>
+         <Message>In class entidade.Disponibilidade</Message>
+      </Class>
+      <Field isStatic="false" classname="entidade.Disponibilidade" name="dataFim" primary="true" signature="Ljava/util/Calendar;">
+         <SourceLine classname="entidade.Disponibilidade" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java">
+            <Message>In Disponibilidade.java</Message>
+         </SourceLine>
+         <Message>Field entidade.Disponibilidade.dataFim</Message>
+      </Field>
+      <Method isStatic="false" classname="entidade.Disponibilidade" name="toString" primary="true" signature="()Ljava/lang/String;">
+         <SourceLine endBytecode="111" startBytecode="0" start="20" classname="entidade.Disponibilidade" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java" end="20" />
+         <Message>In method entidade.Disponibilidade.toString()</Message>
+      </Method>
+      <SourceLine endBytecode="43" startBytecode="43" start="20" classname="entidade.Disponibilidade" primary="true" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java" end="20">
+         <Message>At Disponibilidade.java:[line 20]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="20" category="STYLE" instanceHash="5050aceb037ffa744f2cfb3063d30e6a" instanceOccurrenceNum="0" priority="3" abbrev="UwF" type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" instanceOccurrenceMax="0">
+      <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+      <LongMessage>Disponibilidade.dataInicio not initialized in constructor and dereferenced in entidade.Disponibilidade.toString()</LongMessage>
+      <Class classname="entidade.Disponibilidade" primary="true">
+         <SourceLine start="8" classname="entidade.Disponibilidade" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java" end="97">
+            <Message>At Disponibilidade.java:[lines 8-97]</Message>
+         </SourceLine>
+         <Message>In class entidade.Disponibilidade</Message>
+      </Class>
+      <Field isStatic="false" classname="entidade.Disponibilidade" name="dataInicio" primary="true" signature="Ljava/util/Calendar;">
+         <SourceLine classname="entidade.Disponibilidade" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java">
+            <Message>In Disponibilidade.java</Message>
+         </SourceLine>
+         <Message>Field entidade.Disponibilidade.dataInicio</Message>
+      </Field>
+      <Method isStatic="false" classname="entidade.Disponibilidade" name="toString" primary="true" signature="()Ljava/lang/String;">
+         <SourceLine endBytecode="111" startBytecode="0" start="20" classname="entidade.Disponibilidade" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java" end="20" />
+         <Message>In method entidade.Disponibilidade.toString()</Message>
+      </Method>
+      <SourceLine endBytecode="28" startBytecode="28" start="20" classname="entidade.Disponibilidade" primary="true" sourcepath="entidade/Disponibilidade.java" sourcefile="Disponibilidade.java" end="20">
+         <Message>At Disponibilidade.java:[line 20]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="20" category="STYLE" instanceHash="3b4e28028049f32525e030445fb8498d" instanceOccurrenceNum="0" priority="3" abbrev="UwF" type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" instanceOccurrenceMax="0">
+      <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+      <LongMessage>Localidade.disponibilidades not initialized in constructor and dereferenced in entidade.Localidade.toString()</LongMessage>
+      <Class classname="entidade.Localidade" primary="true">
+         <SourceLine start="8" classname="entidade.Localidade" sourcepath="entidade/Localidade.java" sourcefile="Localidade.java" end="80">
+            <Message>At Localidade.java:[lines 8-80]</Message>
+         </SourceLine>
+         <Message>In class entidade.Localidade</Message>
+      </Class>
+      <Field isStatic="false" classname="entidade.Localidade" name="disponibilidades" primary="true" signature="Ljava/util/List;">
+         <SourceLine classname="entidade.Localidade" sourcepath="entidade/Localidade.java" sourcefile="Localidade.java">
+            <Message>In Localidade.java</Message>
+         </SourceLine>
+         <Message>Field entidade.Localidade.disponibilidades</Message>
+      </Field>
+      <Method isStatic="false" classname="entidade.Localidade" name="toString" primary="true" signature="()Ljava/lang/String;">
+         <SourceLine endBytecode="214" startBytecode="0" start="18" classname="entidade.Localidade" sourcepath="entidade/Localidade.java" sourcefile="Localidade.java" end="25" />
+         <Message>In method entidade.Localidade.toString()</Message>
+      </Method>
+      <SourceLine endBytecode="53" startBytecode="53" start="22" classname="entidade.Localidade" primary="true" sourcepath="entidade/Localidade.java" sourcefile="Localidade.java" end="22">
+         <Message>At Localidade.java:[line 22]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="16" category="BAD_PRACTICE" instanceHash="67b9a6e16f7800bcae7499508740e037" instanceOccurrenceNum="0" priority="2" abbrev="Eq" type="EQ_COMPARETO_USE_OBJECT_EQUALS" instanceOccurrenceMax="0">
+      <ShortMessage>Class defines compareTo(...) and uses Object.equals()</ShortMessage>
+      <LongMessage>entidade.Palestra defines compareTo(Palestra) and uses Object.equals()</LongMessage>
+      <Class classname="entidade.Palestra" primary="true">
+         <SourceLine start="8" classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="168">
+            <Message>At Palestra.java:[lines 8-168]</Message>
+         </SourceLine>
+         <Message>In class entidade.Palestra</Message>
+      </Class>
+      <Method isStatic="false" classname="entidade.Palestra" name="compareTo" primary="true" signature="(Lentidade/Palestra;)I">
+         <SourceLine endBytecode="111" startBytecode="0" start="36" classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="41" />
+         <Message>In method entidade.Palestra.compareTo(Palestra)</Message>
+      </Method>
+      <SourceLine endBytecode="111" startBytecode="0" start="36" classname="entidade.Palestra" sourcepath="entidade/Palestra.java" synthetic="true" sourcefile="Palestra.java" end="41">
+         <Message>At Palestra.java:[lines 36-41]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="20" category="STYLE" instanceHash="dfcd6fc516d5dbb4cb697d3e066cf9f0" instanceOccurrenceNum="0" priority="3" abbrev="UwF" type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" instanceOccurrenceMax="0">
+      <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+      <LongMessage>Palestra.dataInicio not initialized in constructor and dereferenced in entidade.Palestra.compareTo(Palestra)</LongMessage>
+      <Class classname="entidade.Palestra" primary="true">
+         <SourceLine start="8" classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="168">
+            <Message>At Palestra.java:[lines 8-168]</Message>
+         </SourceLine>
+         <Message>In class entidade.Palestra</Message>
+      </Class>
+      <Field isStatic="false" classname="entidade.Palestra" name="dataInicio" primary="true" signature="Ljava/util/Calendar;">
+         <SourceLine classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java">
+            <Message>In Palestra.java</Message>
+         </SourceLine>
+         <Message>Field entidade.Palestra.dataInicio</Message>
+      </Field>
+      <Method isStatic="false" classname="entidade.Palestra" name="compareTo" primary="true" signature="(Lentidade/Palestra;)I">
+         <SourceLine endBytecode="111" startBytecode="0" start="36" classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="41" />
+         <Message>In method entidade.Palestra.compareTo(Palestra)</Message>
+      </Method>
+      <SourceLine endBytecode="8" startBytecode="8" start="36" classname="entidade.Palestra" primary="true" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="36">
+         <Message>At Palestra.java:[line 36]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="20" category="STYLE" instanceHash="3a4891ce61e487359e63058407212137" instanceOccurrenceNum="0" priority="3" abbrev="UwF" type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" instanceOccurrenceMax="0">
+      <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+      <LongMessage>Palestra.palestrante not initialized in constructor and dereferenced in entidade.Palestra.toString()</LongMessage>
+      <Class classname="entidade.Palestra" primary="true">
+         <SourceLine start="8" classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="168">
+            <Message>At Palestra.java:[lines 8-168]</Message>
+         </SourceLine>
+         <Message>In class entidade.Palestra</Message>
+      </Class>
+      <Field isStatic="false" classname="entidade.Palestra" name="palestrante" primary="true" signature="Lentidade/Palestrante;">
+         <SourceLine classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java">
+            <Message>In Palestra.java</Message>
+         </SourceLine>
+         <Message>Field entidade.Palestra.palestrante</Message>
+      </Field>
+      <Method isStatic="false" classname="entidade.Palestra" name="toString" primary="true" signature="()Ljava/lang/String;">
+         <SourceLine endBytecode="177" startBytecode="0" start="26" classname="entidade.Palestra" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="26" />
+         <Message>In method entidade.Palestra.toString()</Message>
+      </Method>
+      <SourceLine endBytecode="28" startBytecode="28" start="26" classname="entidade.Palestra" primary="true" sourcepath="entidade/Palestra.java" sourcefile="Palestra.java" end="26">
+         <Message>At Palestra.java:[line 26]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="20" category="STYLE" instanceHash="31b1275e5d1cb5fad9389f1bf1c7083b" instanceOccurrenceNum="0" priority="3" abbrev="UwF" type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" instanceOccurrenceMax="0">
+      <ShortMessage>Field not initialized in constructor but dereferenced without null check</ShortMessage>
+      <LongMessage>Palestrante.disponibilidades not initialized in constructor and dereferenced in entidade.Palestrante.toString()</LongMessage>
+      <Class classname="entidade.Palestrante" primary="true">
+         <SourceLine start="8" classname="entidade.Palestrante" sourcepath="entidade/Palestrante.java" sourcefile="Palestrante.java" end="60">
+            <Message>At Palestrante.java:[lines 8-60]</Message>
+         </SourceLine>
+         <Message>In class entidade.Palestrante</Message>
+      </Class>
+      <Field isStatic="false" classname="entidade.Palestrante" name="disponibilidades" primary="true" signature="Ljava/util/List;">
+         <SourceLine classname="entidade.Palestrante" sourcepath="entidade/Palestrante.java" sourcefile="Palestrante.java">
+            <Message>In Palestrante.java</Message>
+         </SourceLine>
+         <Message>Field entidade.Palestrante.disponibilidades</Message>
+      </Field>
+      <Method isStatic="false" classname="entidade.Palestrante" name="toString" primary="true" signature="()Ljava/lang/String;">
+         <SourceLine endBytecode="214" startBytecode="0" start="16" classname="entidade.Palestrante" sourcepath="entidade/Palestrante.java" sourcefile="Palestrante.java" end="23" />
+         <Message>In method entidade.Palestrante.toString()</Message>
+      </Method>
+      <SourceLine endBytecode="53" startBytecode="53" start="20" classname="entidade.Palestrante" primary="true" sourcepath="entidade/Palestrante.java" sourcefile="Palestrante.java" end="20">
+         <Message>At Palestrante.java:[line 20]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="19" category="I18N" instanceHash="ab9dcac10fc295235c6c7bd017f12466" instanceOccurrenceNum="0" priority="1" abbrev="Dm" type="DM_DEFAULT_ENCODING" instanceOccurrenceMax="0">
+      <ShortMessage>Reliance on default encoding</ShortMessage>
+      <LongMessage>Found reliance on default encoding in localidade.LocalidadeLeituraImpl.lerArquivoLocalidades(String): new java.io.FileReader(String)</LongMessage>
+      <Class classname="localidade.LocalidadeLeituraImpl" primary="true">
+         <SourceLine start="9" classname="localidade.LocalidadeLeituraImpl" sourcepath="localidade/LocalidadeLeituraImpl.java" sourcefile="LocalidadeLeituraImpl.java" end="24">
+            <Message>At LocalidadeLeituraImpl.java:[lines 9-24]</Message>
+         </SourceLine>
+         <Message>In class localidade.LocalidadeLeituraImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="localidade.LocalidadeLeituraImpl" name="lerArquivoLocalidades" primary="true" signature="(Ljava/lang/String;)Ljava/util/List;">
+         <SourceLine endBytecode="513" startBytecode="0" start="13" classname="localidade.LocalidadeLeituraImpl" sourcepath="localidade/LocalidadeLeituraImpl.java" sourcefile="LocalidadeLeituraImpl.java" end="24" />
+         <Message>In method localidade.LocalidadeLeituraImpl.lerArquivoLocalidades(String)</Message>
+      </Method>
+      <Method isStatic="false" classname="java.io.FileReader" name="&lt;init&gt;" role="METHOD_CALLED" signature="(Ljava/lang/String;)V">
+         <SourceLine endBytecode="40" startBytecode="0" start="58" classname="java.io.FileReader" sourcepath="java/io/FileReader.java" sourcefile="FileReader.java" end="59" />
+         <Message>Called method new java.io.FileReader(String)</Message>
+      </Method>
+      <SourceLine endBytecode="35" startBytecode="35" start="14" classname="localidade.LocalidadeLeituraImpl" primary="true" sourcepath="localidade/LocalidadeLeituraImpl.java" sourcefile="LocalidadeLeituraImpl.java" end="14">
+         <Message>At LocalidadeLeituraImpl.java:[line 14]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="19" category="STYLE" instanceHash="defcc7f4fb9d312199e5e678793cfa1d" instanceOccurrenceNum="0" priority="2" abbrev="SF" type="SF_SWITCH_NO_DEFAULT" instanceOccurrenceMax="0">
+      <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+      <LongMessage>Switch statement found in localidade.LocalidadeTratamentoImpl.tratarDadosLocalidades(List) where default case is missing</LongMessage>
+      <Class classname="localidade.LocalidadeTratamentoImpl" primary="true">
+         <SourceLine start="11" classname="localidade.LocalidadeTratamentoImpl" sourcepath="localidade/LocalidadeTratamentoImpl.java" sourcefile="LocalidadeTratamentoImpl.java" end="67">
+            <Message>At LocalidadeTratamentoImpl.java:[lines 11-67]</Message>
+         </SourceLine>
+         <Message>In class localidade.LocalidadeTratamentoImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="localidade.LocalidadeTratamentoImpl" name="tratarDadosLocalidades" primary="true" signature="(Ljava/util/List;)Ljava/util/List;">
+         <SourceLine endBytecode="1128" startBytecode="0" start="17" classname="localidade.LocalidadeTratamentoImpl" sourcepath="localidade/LocalidadeTratamentoImpl.java" sourcefile="LocalidadeTratamentoImpl.java" end="67" />
+         <Message>In method localidade.LocalidadeTratamentoImpl.tratarDadosLocalidades(List)</Message>
+      </Method>
+      <SourceLine endBytecode="588" startBytecode="143" start="20" classname="localidade.LocalidadeTratamentoImpl" primary="true" sourcepath="localidade/LocalidadeTratamentoImpl.java" sourcefile="LocalidadeTratamentoImpl.java" end="63">
+         <Message>At LocalidadeTratamentoImpl.java:[lines 20-63]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="19" category="I18N" instanceHash="ce0f53d424982bc1c8e2fc507e13f9b8" instanceOccurrenceNum="0" priority="1" abbrev="Dm" type="DM_DEFAULT_ENCODING" instanceOccurrenceMax="0">
+      <ShortMessage>Reliance on default encoding</ShortMessage>
+      <LongMessage>Found reliance on default encoding in palestra.PalestraLeituraImpl.lerArquivoPalestras(String): new java.io.FileReader(String)</LongMessage>
+      <Class classname="palestra.PalestraLeituraImpl" primary="true">
+         <SourceLine start="9" classname="palestra.PalestraLeituraImpl" sourcepath="palestra/PalestraLeituraImpl.java" sourcefile="PalestraLeituraImpl.java" end="23">
+            <Message>At PalestraLeituraImpl.java:[lines 9-23]</Message>
+         </SourceLine>
+         <Message>In class palestra.PalestraLeituraImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="palestra.PalestraLeituraImpl" name="lerArquivoPalestras" primary="true" signature="(Ljava/lang/String;)Ljava/util/List;">
+         <SourceLine endBytecode="499" startBytecode="0" start="13" classname="palestra.PalestraLeituraImpl" sourcepath="palestra/PalestraLeituraImpl.java" sourcefile="PalestraLeituraImpl.java" end="23" />
+         <Message>In method palestra.PalestraLeituraImpl.lerArquivoPalestras(String)</Message>
+      </Method>
+      <Method isStatic="false" classname="java.io.FileReader" name="&lt;init&gt;" role="METHOD_CALLED" signature="(Ljava/lang/String;)V">
+         <SourceLine endBytecode="40" startBytecode="0" start="58" classname="java.io.FileReader" sourcepath="java/io/FileReader.java" sourcefile="FileReader.java" end="59" />
+         <Message>Called method new java.io.FileReader(String)</Message>
+      </Method>
+      <SourceLine endBytecode="35" startBytecode="35" start="14" classname="palestra.PalestraLeituraImpl" primary="true" sourcepath="palestra/PalestraLeituraImpl.java" sourcefile="PalestraLeituraImpl.java" end="14">
+         <Message>At PalestraLeituraImpl.java:[line 14]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="16" category="PERFORMANCE" instanceHash="a05f0e4f22c6104428e0b820ee7ef185" instanceOccurrenceNum="0" priority="1" abbrev="Bx" type="DM_BOXED_PRIMITIVE_FOR_PARSING" instanceOccurrenceMax="0">
+      <ShortMessage>Boxing/unboxing to parse a primitive</ShortMessage>
+      <LongMessage>Boxing/unboxing to parse a primitive palestra.PalestraTratamentoImpl.tratarDadosPalestras(List)</LongMessage>
+      <Class classname="palestra.PalestraTratamentoImpl" primary="true">
+         <SourceLine start="9" classname="palestra.PalestraTratamentoImpl" sourcepath="palestra/PalestraTratamentoImpl.java" sourcefile="PalestraTratamentoImpl.java" end="46">
+            <Message>At PalestraTratamentoImpl.java:[lines 9-46]</Message>
+         </SourceLine>
+         <Message>In class palestra.PalestraTratamentoImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="palestra.PalestraTratamentoImpl" name="tratarDadosPalestras" primary="true" signature="(Ljava/util/List;)Ljava/util/List;">
+         <SourceLine endBytecode="839" startBytecode="0" start="13" classname="palestra.PalestraTratamentoImpl" sourcepath="palestra/PalestraTratamentoImpl.java" sourcefile="PalestraTratamentoImpl.java" end="46" />
+         <Message>In method palestra.PalestraTratamentoImpl.tratarDadosPalestras(List)</Message>
+      </Method>
+      <Method isStatic="false" classname="java.lang.Integer" name="intValue" role="METHOD_CALLED" signature="()I">
+         <SourceLine endBytecode="28" startBytecode="0" start="701" classname="java.lang.Integer" sourcepath="java/lang/Integer.java" sourcefile="Integer.java" end="701" />
+         <Message>Called method Integer.intValue()</Message>
+      </Method>
+      <Method isStatic="true" classname="java.lang.Integer" name="parseInt" role="SHOULD_CALL" signature="(Ljava/lang/String;)I">
+         <Message>Should call Integer.parseInt(String) instead</Message>
+      </Method>
+      <SourceLine endBytecode="432" startBytecode="432" start="39" classname="palestra.PalestraTratamentoImpl" primary="true" sourcepath="palestra/PalestraTratamentoImpl.java" sourcefile="PalestraTratamentoImpl.java" end="39">
+         <Message>At PalestraTratamentoImpl.java:[line 39]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="19" category="STYLE" instanceHash="d614d477bc82aff589b4bb28e4494b4d" instanceOccurrenceNum="0" priority="2" abbrev="SF" type="SF_SWITCH_NO_DEFAULT" instanceOccurrenceMax="0">
+      <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+      <LongMessage>Switch statement found in palestra.PalestraTratamentoImpl.tratarDadosPalestras(List) where default case is missing</LongMessage>
+      <Class classname="palestra.PalestraTratamentoImpl" primary="true">
+         <SourceLine start="9" classname="palestra.PalestraTratamentoImpl" sourcepath="palestra/PalestraTratamentoImpl.java" sourcefile="PalestraTratamentoImpl.java" end="46">
+            <Message>At PalestraTratamentoImpl.java:[lines 9-46]</Message>
+         </SourceLine>
+         <Message>In class palestra.PalestraTratamentoImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="palestra.PalestraTratamentoImpl" name="tratarDadosPalestras" primary="true" signature="(Ljava/util/List;)Ljava/util/List;">
+         <SourceLine endBytecode="839" startBytecode="0" start="13" classname="palestra.PalestraTratamentoImpl" sourcepath="palestra/PalestraTratamentoImpl.java" sourcefile="PalestraTratamentoImpl.java" end="46" />
+         <Message>In method palestra.PalestraTratamentoImpl.tratarDadosPalestras(List)</Message>
+      </Method>
+      <SourceLine endBytecode="475" startBytecode="167" start="16" classname="palestra.PalestraTratamentoImpl" primary="true" sourcepath="palestra/PalestraTratamentoImpl.java" sourcefile="PalestraTratamentoImpl.java" end="42">
+         <Message>At PalestraTratamentoImpl.java:[lines 16-42]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="19" category="I18N" instanceHash="9415ce67ec7d5f1084c1148b90e8783b" instanceOccurrenceNum="0" priority="1" abbrev="Dm" type="DM_DEFAULT_ENCODING" instanceOccurrenceMax="0">
+      <ShortMessage>Reliance on default encoding</ShortMessage>
+      <LongMessage>Found reliance on default encoding in palestrante.PalestranteLeituraImpl.lerArquivoPalestrantes(String): new java.io.FileReader(String)</LongMessage>
+      <Class classname="palestrante.PalestranteLeituraImpl" primary="true">
+         <SourceLine start="9" classname="palestrante.PalestranteLeituraImpl" sourcepath="palestrante/PalestranteLeituraImpl.java" sourcefile="PalestranteLeituraImpl.java" end="24">
+            <Message>At PalestranteLeituraImpl.java:[lines 9-24]</Message>
+         </SourceLine>
+         <Message>In class palestrante.PalestranteLeituraImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="palestrante.PalestranteLeituraImpl" name="lerArquivoPalestrantes" primary="true" signature="(Ljava/lang/String;)Ljava/util/List;">
+         <SourceLine endBytecode="513" startBytecode="0" start="13" classname="palestrante.PalestranteLeituraImpl" sourcepath="palestrante/PalestranteLeituraImpl.java" sourcefile="PalestranteLeituraImpl.java" end="24" />
+         <Message>In method palestrante.PalestranteLeituraImpl.lerArquivoPalestrantes(String)</Message>
+      </Method>
+      <Method isStatic="false" classname="java.io.FileReader" name="&lt;init&gt;" role="METHOD_CALLED" signature="(Ljava/lang/String;)V">
+         <SourceLine endBytecode="40" startBytecode="0" start="58" classname="java.io.FileReader" sourcepath="java/io/FileReader.java" sourcefile="FileReader.java" end="59" />
+         <Message>Called method new java.io.FileReader(String)</Message>
+      </Method>
+      <SourceLine endBytecode="35" startBytecode="35" start="14" classname="palestrante.PalestranteLeituraImpl" primary="true" sourcepath="palestrante/PalestranteLeituraImpl.java" sourcefile="PalestranteLeituraImpl.java" end="14">
+         <Message>At PalestranteLeituraImpl.java:[line 14]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugInstance rank="19" category="STYLE" instanceHash="316151cb880ee6e9a414511aa2866900" instanceOccurrenceNum="0" priority="2" abbrev="SF" type="SF_SWITCH_NO_DEFAULT" instanceOccurrenceMax="0">
+      <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+      <LongMessage>Switch statement found in palestrante.PalestranteTratamentoImpl.tratarDadosPalestrantes(List) where default case is missing</LongMessage>
+      <Class classname="palestrante.PalestranteTratamentoImpl" primary="true">
+         <SourceLine start="12" classname="palestrante.PalestranteTratamentoImpl" sourcepath="palestrante/PalestranteTratamentoImpl.java" sourcefile="PalestranteTratamentoImpl.java" end="76">
+            <Message>At PalestranteTratamentoImpl.java:[lines 12-76]</Message>
+         </SourceLine>
+         <Message>In class palestrante.PalestranteTratamentoImpl</Message>
+      </Class>
+      <Method isStatic="false" classname="palestrante.PalestranteTratamentoImpl" name="tratarDadosPalestrantes" primary="true" signature="(Ljava/util/List;)Ljava/util/List;">
+         <SourceLine endBytecode="1003" startBytecode="0" start="18" classname="palestrante.PalestranteTratamentoImpl" sourcepath="palestrante/PalestranteTratamentoImpl.java" sourcefile="PalestranteTratamentoImpl.java" end="62" />
+         <Message>In method palestrante.PalestranteTratamentoImpl.tratarDadosPalestrantes(List)</Message>
+      </Method>
+      <SourceLine endBytecode="502" startBytecode="119" start="21" classname="palestrante.PalestranteTratamentoImpl" primary="true" sourcepath="palestrante/PalestranteTratamentoImpl.java" sourcefile="PalestranteTratamentoImpl.java" end="58">
+         <Message>At PalestranteTratamentoImpl.java:[lines 21-58]</Message>
+      </SourceLine>
+   </BugInstance>
+   <BugCategory category="STYLE">
+      <Description>Dodgy code</Description>
+   </BugCategory>
+   <BugCategory category="BAD_PRACTICE">
+      <Description>Bad practice</Description>
+   </BugCategory>
+   <BugCategory category="I18N">
+      <Description>Internationalization</Description>
+   </BugCategory>
+   <BugCategory category="PERFORMANCE">
+      <Description>Performance</Description>
+   </BugCategory>
+   <BugPattern category="I18N" abbrev="Dm" type="DM_DEFAULT_ENCODING">
+      <ShortDescription>Reliance on default encoding</ShortDescription>
+      <Details>&lt;p&gt; Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  &lt;/p&gt;</Details>
+   </BugPattern>
+   <BugPattern category="STYLE" abbrev="SF" type="SF_SWITCH_NO_DEFAULT">
+      <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+      <Details>&lt;p&gt; This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.&lt;/p&gt;
+  &lt;p&gt;Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.</Details>
+   </BugPattern>
+   <BugPattern category="PERFORMANCE" abbrev="Bx" type="DM_BOXED_PRIMITIVE_FOR_PARSING">
+      <ShortDescription>Boxing/unboxing to parse a primitive</ShortDescription>
+      <Details>&lt;p&gt;A boxed primitive is created from a String, just to extract the unboxed primitive value.
+  It is more efficient to just call the static parseXXX method.&lt;/p&gt;</Details>
+   </BugPattern>
+   <BugPattern category="STYLE" abbrev="UwF" type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">
+      <ShortDescription>Field not initialized in constructor but dereferenced without null check</ShortDescription>
+      <Details>&lt;p&gt; This field is never initialized within any constructor, and is therefore could be null after
+the object is constructed. Elsewhere, it is loaded and dereferenced without a null check.
+This could be a either an error or a questionable design, since
+it means a null pointer exception will be generated if that field is dereferenced
+before being initialized.
+&lt;/p&gt;</Details>
+   </BugPattern>
+   <BugPattern category="BAD_PRACTICE" abbrev="Eq" type="EQ_COMPARETO_USE_OBJECT_EQUALS">
+      <ShortDescription>Class defines compareTo(...) and uses Object.equals()</ShortDescription>
+      <Details>&lt;p&gt; This class defines a &lt;code&gt;compareTo(...)&lt;/code&gt; method but inherits its
+  &lt;code&gt;equals()&lt;/code&gt; method from &lt;code&gt;java.lang.Object&lt;/code&gt;.
+    Generally, the value of compareTo should return zero if and only if
+    equals returns true. If this is violated, weird and unpredictable
+    failures will occur in classes such as PriorityQueue.
+    In Java 5 the PriorityQueue.remove method uses the compareTo method,
+    while in Java 6 it uses the equals method.&lt;/p&gt;
+
+&lt;p&gt;From the JavaDoc for the compareTo method in the Comparable interface:
+&lt;blockquote&gt;
+It is strongly recommended, but not strictly required that &lt;code&gt;(x.compareTo(y)==0) == (x.equals(y))&lt;/code&gt;.
+Generally speaking, any class that implements the Comparable interface and violates this condition
+should clearly indicate this fact. The recommended language
+is "Note: this class has a natural ordering that is inconsistent with equals."
+&lt;/blockquote&gt;&lt;/p&gt;</Details>
+   </BugPattern>
+   <BugCode abbrev="Eq">
+      <Description>Problems with implementation of equals()</Description>
+   </BugCode>
+   <BugCode abbrev="Bx">
+      <Description>Questionable Boxing of primitive value</Description>
+   </BugCode>
+   <BugCode abbrev="SF">
+      <Description>Switch case falls through</Description>
+   </BugCode>
+   <BugCode abbrev="Dm">
+      <Description>Dubious method used</Description>
+   </BugCode>
+   <BugCode abbrev="UwF">
+      <Description>Unwritten field</Description>
+   </BugCode>
+   <Errors errors="0" missingClasses="0" />
+   <FindBugsSummary alloc_mbytes="455.00" priority_2="5" priority_1="7" gc_seconds="0.07" peak_mbytes="169.12" total_bugs="18" priority_3="6" java_version="1.7.0_79" referenced_classes="68" timestamp="Mon, 2 Nov 2015 15:27:24 -0200" total_classes="34" num_packages="7" total_size="576" cpu_seconds="24.66" clock_seconds="8.78" vm_version="24.79-b02">
+      <FileStats path="action/Main.java" bugCount="0" size="66" />
+      <FileStats path="calendario/CalendarioComponent.java" bugCount="0" size="1" />
+      <FileStats path="calendario/CalendarioControle.java" bugCount="0" size="5" />
+      <FileStats path="calendario/CalendarioControleImpl.java" bugCount="0" size="55" />
+      <FileStats path="calendario/CalendarioPersistencia.java" bugCount="0" size="2" />
+      <FileStats path="calendario/CalendarioPersistenciaImpl.java" bugCount="1" bugHash="ca21756fc73f06ce656a972b69860cd2" size="54" />
+      <FileStats path="calendario/CalendarioTratamento.java" bugCount="0" size="5" />
+      <FileStats path="calendario/CalendarioTratamentoImpl.java" bugCount="3" bugHash="918290175df166270aba88d56c6360da" size="49" />
+      <FileStats path="entidade/Disponibilidade.java" bugCount="2" bugHash="4aabca26b2503c194acd1733e176c4ff" size="29" />
+      <FileStats path="entidade/Localidade.java" bugCount="1" bugHash="5ffcb7396e7a3960bcbcff8e5d170f98" size="30" />
+      <FileStats path="entidade/Palestra.java" bugCount="3" bugHash="732713e2cbe469fc18150f5630f2537a" size="54" />
+      <FileStats path="entidade/Palestrante.java" bugCount="1" bugHash="bcf608e1dc00841dd0fd460d71c5883f" size="24" />
+      <FileStats path="localidade/LocalidadeComponent.java" bugCount="0" size="1" />
+      <FileStats path="localidade/LocalidadeLeitura.java" bugCount="0" size="2" />
+      <FileStats path="localidade/LocalidadeLeituraImpl.java" bugCount="1" bugHash="870a4de8d0f0a081098debbe9d138a06" size="14" />
+      <FileStats path="localidade/LocalidadePersistencia.java" bugCount="0" size="1" />
+      <FileStats path="localidade/LocalidadePersistenciaImpl.java" bugCount="0" size="3" />
+      <FileStats path="localidade/LocalidadeTratamento.java" bugCount="0" size="2" />
+      <FileStats path="localidade/LocalidadeTratamentoImpl.java" bugCount="1" bugHash="2c70f153dc2fa6628282f650558cc3a8" size="48" />
+      <FileStats path="palestra/PalestraComponent.java" bugCount="0" size="1" />
+      <FileStats path="palestra/PalestraLeitura.java" bugCount="0" size="2" />
+      <FileStats path="palestra/PalestraLeituraImpl.java" bugCount="1" bugHash="d7dd8901743c36704da14a8b8105a5e6" size="14" />
+      <FileStats path="palestra/PalestraPersistencia.java" bugCount="0" size="1" />
+      <FileStats path="palestra/PalestraPersistenciaImpl.java" bugCount="0" size="3" />
+      <FileStats path="palestra/PalestraTratamento.java" bugCount="0" size="2" />
+      <FileStats path="palestra/PalestraTratamentoImpl.java" bugCount="2" bugHash="621e341367f618d2cbd09aa531d5035e" size="29" />
+      <FileStats path="palestrante/PalestranteComponent.java" bugCount="0" size="1" />
+      <FileStats path="palestrante/PalestranteLeitura.java" bugCount="0" size="2" />
+      <FileStats path="palestrante/PalestranteLeituraImpl.java" bugCount="1" bugHash="e123effdeb8eefa9229a5edd558a72a2" size="14" />
+      <FileStats path="palestrante/PalestrantePersistencia.java" bugCount="0" size="1" />
+      <FileStats path="palestrante/PalestrantePersistenciaImpl.java" bugCount="0" size="3" />
+      <FileStats path="palestrante/PalestranteTratamento.java" bugCount="0" size="3" />
+      <FileStats path="palestrante/PalestranteTratamentoImpl.java" bugCount="1" bugHash="a7f93d863e4b013d0154ae7cf9ba75c5" size="53" />
+      <FileStats path="principal/Integrator.java" bugCount="0" size="2" />
+      <PackageStats total_size="66" package="action" total_bugs="0" total_types="1">
+         <ClassStats sourceFile="Main.java" bugs="0" class="action.Main" interface="false" size="66" />
+      </PackageStats>
+      <PackageStats priority_2="1" priority_1="3" total_size="171" package="calendario" total_bugs="4" total_types="7">
+         <ClassStats sourceFile="CalendarioComponent.java" bugs="0" class="calendario.CalendarioComponent" interface="true" size="1" />
+         <ClassStats sourceFile="CalendarioControle.java" bugs="0" class="calendario.CalendarioControle" interface="true" size="5" />
+         <ClassStats sourceFile="CalendarioControleImpl.java" bugs="0" class="calendario.CalendarioControleImpl" interface="false" size="55" />
+         <ClassStats sourceFile="CalendarioPersistencia.java" bugs="0" class="calendario.CalendarioPersistencia" interface="true" size="2" />
+         <ClassStats priority_1="1" sourceFile="CalendarioPersistenciaImpl.java" bugs="1" class="calendario.CalendarioPersistenciaImpl" interface="false" size="54" />
+         <ClassStats sourceFile="CalendarioTratamento.java" bugs="0" class="calendario.CalendarioTratamento" interface="true" size="5" />
+         <ClassStats priority_2="1" priority_1="2" sourceFile="CalendarioTratamentoImpl.java" bugs="3" class="calendario.CalendarioTratamentoImpl" interface="false" size="49" />
+      </PackageStats>
+      <PackageStats priority_2="1" total_size="137" package="entidade" total_bugs="7" priority_3="6" total_types="4">
+         <ClassStats sourceFile="Disponibilidade.java" bugs="2" class="entidade.Disponibilidade" interface="false" priority_3="2" size="29" />
+         <ClassStats sourceFile="Localidade.java" bugs="1" class="entidade.Localidade" interface="false" priority_3="1" size="30" />
+         <ClassStats priority_2="1" sourceFile="Palestra.java" bugs="3" class="entidade.Palestra" interface="false" priority_3="2" size="54" />
+         <ClassStats sourceFile="Palestrante.java" bugs="1" class="entidade.Palestrante" interface="false" priority_3="1" size="24" />
+      </PackageStats>
+      <PackageStats priority_2="1" priority_1="1" total_size="71" package="localidade" total_bugs="2" total_types="7">
+         <ClassStats sourceFile="LocalidadeComponent.java" bugs="0" class="localidade.LocalidadeComponent" interface="true" size="1" />
+         <ClassStats sourceFile="LocalidadeLeitura.java" bugs="0" class="localidade.LocalidadeLeitura" interface="true" size="2" />
+         <ClassStats priority_1="1" sourceFile="LocalidadeLeituraImpl.java" bugs="1" class="localidade.LocalidadeLeituraImpl" interface="false" size="14" />
+         <ClassStats sourceFile="LocalidadePersistencia.java" bugs="0" class="localidade.LocalidadePersistencia" interface="true" size="1" />
+         <ClassStats sourceFile="LocalidadePersistenciaImpl.java" bugs="0" class="localidade.LocalidadePersistenciaImpl" interface="false" size="3" />
+         <ClassStats sourceFile="LocalidadeTratamento.java" bugs="0" class="localidade.LocalidadeTratamento" interface="true" size="2" />
+         <ClassStats priority_2="1" sourceFile="LocalidadeTratamentoImpl.java" bugs="1" class="localidade.LocalidadeTratamentoImpl" interface="false" size="48" />
+      </PackageStats>
+      <PackageStats priority_2="1" priority_1="2" total_size="52" package="palestra" total_bugs="3" total_types="7">
+         <ClassStats sourceFile="PalestraComponent.java" bugs="0" class="palestra.PalestraComponent" interface="true" size="1" />
+         <ClassStats sourceFile="PalestraLeitura.java" bugs="0" class="palestra.PalestraLeitura" interface="true" size="2" />
+         <ClassStats priority_1="1" sourceFile="PalestraLeituraImpl.java" bugs="1" class="palestra.PalestraLeituraImpl" interface="false" size="14" />
+         <ClassStats sourceFile="PalestraPersistencia.java" bugs="0" class="palestra.PalestraPersistencia" interface="true" size="1" />
+         <ClassStats sourceFile="PalestraPersistenciaImpl.java" bugs="0" class="palestra.PalestraPersistenciaImpl" interface="false" size="3" />
+         <ClassStats sourceFile="PalestraTratamento.java" bugs="0" class="palestra.PalestraTratamento" interface="true" size="2" />
+         <ClassStats priority_2="1" priority_1="1" sourceFile="PalestraTratamentoImpl.java" bugs="2" class="palestra.PalestraTratamentoImpl" interface="false" size="29" />
+      </PackageStats>
+      <PackageStats priority_2="1" priority_1="1" total_size="77" package="palestrante" total_bugs="2" total_types="7">
+         <ClassStats sourceFile="PalestranteComponent.java" bugs="0" class="palestrante.PalestranteComponent" interface="true" size="1" />
+         <ClassStats sourceFile="PalestranteLeitura.java" bugs="0" class="palestrante.PalestranteLeitura" interface="true" size="2" />
+         <ClassStats priority_1="1" sourceFile="PalestranteLeituraImpl.java" bugs="1" class="palestrante.PalestranteLeituraImpl" interface="false" size="14" />
+         <ClassStats sourceFile="PalestrantePersistencia.java" bugs="0" class="palestrante.PalestrantePersistencia" interface="true" size="1" />
+         <ClassStats sourceFile="PalestrantePersistenciaImpl.java" bugs="0" class="palestrante.PalestrantePersistenciaImpl" interface="false" size="3" />
+         <ClassStats sourceFile="PalestranteTratamento.java" bugs="0" class="palestrante.PalestranteTratamento" interface="true" size="3" />
+         <ClassStats priority_2="1" sourceFile="PalestranteTratamentoImpl.java" bugs="1" class="palestrante.PalestranteTratamentoImpl" interface="false" size="53" />
+      </PackageStats>
+      <PackageStats total_size="2" package="principal" total_bugs="0" total_types="1">
+         <ClassStats sourceFile="Integrator.java" bugs="0" class="principal.Integrator" interface="true" size="2" />
+      </PackageStats>
+      <FindBugsProfile>
+         <ClassProfile avgMicrosecondsPerInvocation="2392" maxMicrosecondsPerInvocation="21818" name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" invocations="627" totalMilliseconds="1499" standardDeviationMircosecondsPerInvocation="1374" />
+         <ClassProfile avgMicrosecondsPerInvocation="1560" maxMicrosecondsPerInvocation="44903" name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" invocations="625" totalMilliseconds="975" standardDeviationMircosecondsPerInvocation="3726" />
+         <ClassProfile avgMicrosecondsPerInvocation="4959" maxMicrosecondsPerInvocation="77526" name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" invocations="74" totalMilliseconds="366" standardDeviationMircosecondsPerInvocation="13340" />
+         <ClassProfile avgMicrosecondsPerInvocation="4382" maxMicrosecondsPerInvocation="57885" name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" invocations="80" totalMilliseconds="350" standardDeviationMircosecondsPerInvocation="10383" />
+         <ClassProfile avgMicrosecondsPerInvocation="5151" maxMicrosecondsPerInvocation="77927" name="edu.umd.cs.findbugs.detect.FieldItemSummary" invocations="68" totalMilliseconds="350" standardDeviationMircosecondsPerInvocation="11366" />
+         <ClassProfile avgMicrosecondsPerInvocation="4371" maxMicrosecondsPerInvocation="76964" name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" invocations="80" totalMilliseconds="349" standardDeviationMircosecondsPerInvocation="11558" />
+         <ClassProfile avgMicrosecondsPerInvocation="5055" maxMicrosecondsPerInvocation="118596" name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" invocations="68" totalMilliseconds="343" standardDeviationMircosecondsPerInvocation="15114" />
+         <ClassProfile avgMicrosecondsPerInvocation="1465" maxMicrosecondsPerInvocation="34595" name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" invocations="230" totalMilliseconds="337" standardDeviationMircosecondsPerInvocation="2969" />
+         <ClassProfile avgMicrosecondsPerInvocation="4208" maxMicrosecondsPerInvocation="76817" name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" invocations="73" totalMilliseconds="307" standardDeviationMircosecondsPerInvocation="12244" />
+         <ClassProfile avgMicrosecondsPerInvocation="3793" maxMicrosecondsPerInvocation="82917" name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" invocations="74" totalMilliseconds="280" standardDeviationMircosecondsPerInvocation="11370" />
+         <ClassProfile avgMicrosecondsPerInvocation="4321" maxMicrosecondsPerInvocation="50559" name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" invocations="42" totalMilliseconds="181" standardDeviationMircosecondsPerInvocation="9694" />
+         <ClassProfile avgMicrosecondsPerInvocation="2381" maxMicrosecondsPerInvocation="81812" name="edu.umd.cs.findbugs.detect.ExplicitSerialization" invocations="68" totalMilliseconds="161" standardDeviationMircosecondsPerInvocation="10453" />
+         <ClassProfile avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="8429" name="edu.umd.cs.findbugs.util.TopologicalSort" invocations="592" totalMilliseconds="140" standardDeviationMircosecondsPerInvocation="541" />
+         <ClassProfile avgMicrosecondsPerInvocation="1705" maxMicrosecondsPerInvocation="18302" name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" invocations="74" totalMilliseconds="126" standardDeviationMircosecondsPerInvocation="3685" />
+      </FindBugsProfile>
+   </FindBugsSummary>
+   <ClassFeatures />
+   <History />
+</BugCollection>
