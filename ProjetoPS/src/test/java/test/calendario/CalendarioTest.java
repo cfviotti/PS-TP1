@@ -31,13 +31,14 @@ public class CalendarioTest {
 	
 	@Test
 	public void testBuscarDiaSemana() {
+		assertTrue(calendarioTratamento.buscarDiaSemana("Sab") == SABADO);		
 		assertTrue(calendarioTratamento.buscarDiaSemana("Dom") == DOMINGO);
 		assertTrue(calendarioTratamento.buscarDiaSemana("Seg") == SEGUNDA);
 		assertTrue(calendarioTratamento.buscarDiaSemana("Ter") == TERCA);
 		assertTrue(calendarioTratamento.buscarDiaSemana("Qua") == QUARTA);
 		assertTrue(calendarioTratamento.buscarDiaSemana("Qui") == QUINTA);
-		assertTrue(calendarioTratamento.buscarDiaSemana("Sex") == SEXTA);
-		assertTrue(calendarioTratamento.buscarDiaSemana("Sab") == SABADO);
+		assertTrue(calendarioTratamento.buscarDiaSemana("Sex") == SEXTA);		
+		assertTrue(calendarioTratamento.buscarDiaSemana("Teste") == -1);		
 	}
 	
 	@Test
@@ -65,13 +66,12 @@ public class CalendarioTest {
 		dataFim.set(Calendar.DAY_OF_MONTH, 2);
 		dataFim.set(Calendar.MONTH, 1);
 		dataFim.set(Calendar.YEAR, 2000);
-		Calendar dataFimCriada = calendarioTratamento.buscarDataInicio("02/02/2000", "15:43");
+		Calendar dataFimCriada = calendarioTratamento.buscarDataFim("02/02/2000", "15:43-15:44");
 		assertEquals(dataFim.get(Calendar.YEAR), dataFimCriada.get(Calendar.YEAR));
 		assertEquals(dataFim.get(Calendar.MONTH), dataFimCriada.get(Calendar.MONTH));
 		assertEquals(dataFim.get(Calendar.YEAR), dataFimCriada.get(Calendar.YEAR));
 		assertEquals(dataFim.get(Calendar.DAY_OF_MONTH), dataFimCriada.get(Calendar.DAY_OF_MONTH));
-		assertEquals(dataFim.get(Calendar.HOUR_OF_DAY), dataFimCriada.get(Calendar.HOUR_OF_DAY));
-		assertEquals(dataFim.get(Calendar.MINUTE), dataFimCriada.get(Calendar.MINUTE));
+		assertEquals(dataFim.get(Calendar.HOUR_OF_DAY), dataFimCriada.get(Calendar.HOUR_OF_DAY));		
 	}
 	
 	@Test

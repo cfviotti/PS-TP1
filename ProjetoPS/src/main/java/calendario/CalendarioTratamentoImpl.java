@@ -60,7 +60,7 @@ public class CalendarioTratamentoImpl implements CalendarioTratamento {
 			dataFimCalendar.setTime(dateFormat.parse(dataFim));
 		} catch (ParseException e) {
 			e.printStackTrace();
-		}
+		}		
 		String[] horarios = horario.split("-");
 		String[] detalhesHorariosFim = horarios[1].split(":");
 		dataFimCalendar.set(Calendar.HOUR_OF_DAY, Integer.valueOf(detalhesHorariosFim[0]));
