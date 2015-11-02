@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import entidade.Disponibilidade;
+import entidade.Localidade;
 import entidade.Palestra;
 
 public class CalendarioControleImpl implements CalendarioControle {
@@ -54,6 +55,33 @@ public class CalendarioControleImpl implements CalendarioControle {
 			}
 		}
 		return palestrasMap;
+	}
+	
+	@Override
+	public void alocarLocalidades(List<Localidade> localidades, List<Palestra> palestras) {
+		for (Palestra palestra : palestras) {
+			loopLocal: for (Localidade localidade : localidades) {
+				for (Disponibilidade disponibilidadeLocal : localidade.getDisponibilidades()) {
+					for (Disponibilidade disponibilidadePalestrante : palestra.getPalestrante().getDisponibilidades()) {
+						if (isDisponibilidadeCompativel(disponibilidadePalestrante, disponibilidadeLocal)) {
+							palestra.setLocal(localidade);
+							break loopLocal;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	private boolean isDisponibilidadeCompativel(Disponibilidade disponibilidadePalestrante, Disponibilidade disponibilidadeLocal) {
+		if (disponibilidadePalestrante.isDisponivelTodaSemana() || disponibilidadeLocal.isDisponivelTodaSemana()) {
+			return disponibilidadePalestrante.getDataInicio().get(Calendar.MONTH) == disponibilidadeLocal.getDataInicio().get(Calendar.MONTH)
+					&& disponibilidadePalestrante.getDataInicio().get(Calendar.YEAR) == disponibilidadeLocal.getDataInicio().get(Calendar.YEAR);
+		}
+		return disponibilidadePalestrante.getDataInicio().get(Calendar.DAY_OF_MONTH) == disponibilidadeLocal.getDataInicio().get(Calendar.DAY_OF_MONTH)
+				&& disponibilidadePalestrante.getDataInicio().get(Calendar.MONTH) == disponibilidadeLocal.getDataInicio().get(Calendar.MONTH)
+				&& disponibilidadePalestrante.getDataInicio().get(Calendar.YEAR) == disponibilidadeLocal.getDataInicio().get(Calendar.YEAR);
+	
 	}
 	
 }

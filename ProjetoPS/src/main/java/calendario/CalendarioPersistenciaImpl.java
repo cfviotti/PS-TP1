@@ -61,6 +61,8 @@ public class CalendarioPersistenciaImpl implements CalendarioPersistencia {
 						bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.MINUTE)) + "-");
 						bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.HOUR_OF_DAY)) + ":");
 						bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.MINUTE)) + ".\n");
+						bufferedWriter.write("Local: " + palestra.getLocal().getNome() + ".\n");
+						bufferedWriter.write("Endereço: " + palestra.getLocal().getEndereco() + ".\n");
 					}
 					bufferedWriter.write("\n");
 				}

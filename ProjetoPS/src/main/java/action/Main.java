@@ -9,8 +9,13 @@ import calendario.CalendarioControle;
 import calendario.CalendarioControleImpl;
 import calendario.CalendarioPersistencia;
 import calendario.CalendarioPersistenciaImpl;
+import entidade.Localidade;
 import entidade.Palestra;
 import entidade.Palestrante;
+import localidade.LocalidadeLeitura;
+import localidade.LocalidadeLeituraImpl;
+import localidade.LocalidadeTratamento;
+import localidade.LocalidadeTratamentoImpl;
 import palestra.PalestraLeitura;
 import palestra.PalestraLeituraImpl;
 import palestra.PalestraTratamento;
@@ -32,18 +37,23 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		PalestraLeitura palestraLeitura = new PalestraLeituraImpl();
-		PalestraTratamento palestraTratamento = new PalestraTratamentoImpl();
 		PalestranteLeitura palestranteLeitura = new PalestranteLeituraImpl();
+		LocalidadeLeitura localidadeLeitura = new LocalidadeLeituraImpl();
+		PalestraTratamento palestraTratamento = new PalestraTratamentoImpl();
 		PalestranteTratamento palestranteTratamento = new PalestranteTratamentoImpl();
+		LocalidadeTratamento localidadeTratamento = new LocalidadeTratamentoImpl();
 		CalendarioControle calendarioControle = new CalendarioControleImpl();
 		CalendarioPersistencia calendarioPersistencia = new CalendarioPersistenciaImpl();
 		List<String[]> dadosPalestras = palestraLeitura.lerArquivoPalestras("Palestras.txt");
 		List<String[]> dadosPalestrantes = palestranteLeitura.lerArquivoPalestrantes("Palestrantes.txt");
+		List<String[]> dadosLocalidades = localidadeLeitura.lerArquivoLocalidades("Localidades.txt");
 		List<Palestra> palestras = palestraTratamento.tratarDadosPalestras(dadosPalestras);
 		List<Palestrante> palestrantes = palestranteTratamento.tratarDadosPalestrantes(dadosPalestrantes);
+		List<Localidade> localidades = localidadeTratamento.tratarDadosLocalidades(dadosLocalidades);
 		palestranteTratamento.adicionarPalestrantes(palestras, palestrantes);
 		calendarioControle.alocarPalestras(palestras);
 		calendarioControle.removerPalestrasSemHorario(palestras);
+		calendarioControle.alocarLocalidades(localidades, palestras);
 		StringBuilder menuOpcoes = new StringBuilder();
 		menuOpcoes.append("Escolha um dos meses para gerar o arquivo de palestras:\n\n");
 		menuOpcoes.append("0 - Todos os meses\n");

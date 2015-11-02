@@ -3,6 +3,7 @@ package calendario;
 import java.util.List;
 import java.util.Map;
 
+import entidade.Localidade;
 import entidade.Palestra;
 
 public interface CalendarioControle extends CalendarioComponent {
@@ -28,5 +29,12 @@ public interface CalendarioControle extends CalendarioComponent {
 	 * @return um mapa de palestras, tendo como chave o mês em que as palestras ocorrem
 	 */
 	Map<Integer, List<Palestra>> gerarMapaPalestras(List<Palestra> palestras);
-	
+
+	/**
+	 * Aloca as localidades com suas respectivas palestras.
+	 * 
+	 * @param localidades, as localidades
+	 * @param palestras, as palestras
+	 */
+	void alocarLocalidades(List<Localidade> localidades, List<Palestra> palestras);
 }
