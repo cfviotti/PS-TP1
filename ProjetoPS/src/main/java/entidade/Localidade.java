@@ -3,7 +3,7 @@ package entidade;
 import java.util.List;
 
 /**
- * A classe Localidade
+ * A Classe Localidade
  */
 public class Localidade {
 

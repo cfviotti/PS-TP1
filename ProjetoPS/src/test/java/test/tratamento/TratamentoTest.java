@@ -7,6 +7,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import entidade.Localidade;
 import entidade.Palestra;
 import entidade.Palestrante;
 import localidade.LocalidadeLeitura;
@@ -35,6 +36,7 @@ public class TratamentoTest {
 	List<String[]> dadosLocalidades;
 	List<Palestra> palestras;
 	List<Palestrante> palestrantes;
+	List<Localidade> localidades;
 
 	@Before
 	public void initialize() {
@@ -49,6 +51,7 @@ public class TratamentoTest {
 		dadosLocalidades = localidadeLeitura.lerArquivoLocalidades("Localidades.txt");
 		palestras = palestraTratamento.tratarDadosPalestras(dadosPalestras);
 		palestrantes = palestranteTratamento.tratarDadosPalestrantes(dadosPalestrantes);
+		localidades = localidadeTratamento.tratarDadosLocalidades(dadosLocalidades);
 	}
 	
 	@Test
@@ -62,15 +65,16 @@ public class TratamentoTest {
 	}
 	
 	@Test
-	public void testTratarDadosLocalidades() {
-		assertNotNull(localidadeTratamento.tratarDadosLocalidades(dadosLocalidades));
-	}
-	
-	@Test
 	public void adicionarPalestrantes() {
 		palestranteTratamento.adicionarPalestrantes(palestras, palestrantes);
 		for (Palestra palestra : palestras) {
 			assertNotNull(palestra.getPalestrante());
 		}
 	}
+	
+	@Test
+	public void testTratarDadosLocalidades() {
+		assertNotNull(localidadeTratamento.tratarDadosLocalidades(dadosLocalidades));
+	}
+	
 }

@@ -3,7 +3,7 @@ package entidade;
 import java.util.Calendar;
 
 /**
- * A classe Disponibilidade.
+ * A Classe Disponibilidade.
  */
 public class Disponibilidade {
 	
