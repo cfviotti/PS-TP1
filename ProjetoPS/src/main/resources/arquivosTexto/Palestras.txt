@@ -1,6 +1,6 @@
-Nome: NomePalestra1.
+Nome: NomePalestra1 Composto.
 Palestrante: Palestrante1.
-Tema: TemaPalestra1.
+Tema: TemaPalestra1 Composto.
 Duracao: 1:30h.
 Nome: NomePalestra2.
 Palestrante: Palestrante2.

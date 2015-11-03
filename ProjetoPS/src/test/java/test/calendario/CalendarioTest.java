@@ -5,7 +5,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Calendar;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,6 +26,18 @@ public class CalendarioTest {
 	@Before
 	public void initialize() {
 		calendarioTratamento = new CalendarioTratamentoImpl();
+	}
+	
+	@Test(expected=IndexOutOfBoundsException.class)
+	
+	public void testBuscarDataFimException() {
+		new CalendarioTratamentoImpl().buscarDataFim("xx", "yy");
+	}
+	
+	@Test(expected=java.lang.NumberFormatException.class)
+	
+	public void testBuscarDataInicioException() {
+		new CalendarioTratamentoImpl().buscarDataInicio("xx", "yy");
 	}
 	
 	@Test
