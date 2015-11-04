@@ -53,7 +53,7 @@ public class Palestra implements Comparable<Palestra> {
 	/**
 	 * Atualizar uma instância de nome.
 	 * 
-	 * @param nome, o nome
+	 * @param nome O nome da Palestra
 	 */
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -71,7 +71,7 @@ public class Palestra implements Comparable<Palestra> {
 	/**
 	 * Atualizar uma instância de palestrante.
 	 * 
-	 * @param palestrante, o palestrante
+	 * @param palestrante O palestrante da palestra
 	 */
 	public void setPalestrante(Palestrante palestrante) {
 		this.palestrante = palestrante;
@@ -89,7 +89,7 @@ public class Palestra implements Comparable<Palestra> {
 	/**
 	 * Atualizar uma instância de tema.
 	 * 
-	 * @param tema, o tema
+	 * @param tema O tema da Palestra
 	 */
 	public void setTema(String tema) {
 		this.tema = tema;
@@ -107,7 +107,7 @@ public class Palestra implements Comparable<Palestra> {
 	/**
 	 * Atualizar uma instância de local.
 	 * 
-	 * @param local, o local
+	 * @param local O local da palestra
 	 */
 	public void setLocal(Localidade local) {
 		this.local = local;
@@ -125,7 +125,7 @@ public class Palestra implements Comparable<Palestra> {
 	/**
 	 * Atualizar uma instância de duracao.
 	 * 
-	 * @param duracao, o duracao
+	 * @param duracao A duração da palestra
 	 */
 	public void setDuracao(Integer duracao) {
 		this.duracao = duracao;
@@ -143,7 +143,7 @@ public class Palestra implements Comparable<Palestra> {
 	/**
 	 * Atualizar uma instância de dataInicio.
 	 * 
-	 * @param dataInicio, o dataInicio
+	 * @param dataInicio A data de inicio
 	 */
 	public void setDataInicio(Calendar dataInicio) {
 		this.dataInicio = dataInicio;
@@ -161,7 +161,7 @@ public class Palestra implements Comparable<Palestra> {
 	/**
 	 * Atualizar uma instância de dataFim.
 	 * 
-	 * @param dataFim, o dataFim
+	 * @param dataFim A data de fim
 	 */
 	public void setDataFim(Calendar dataFim) {
 		this.dataFim = dataFim;

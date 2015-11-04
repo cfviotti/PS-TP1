@@ -36,7 +36,7 @@ public class Disponibilidade {
 	/**
 	 * Atualizar uma instância de diaSemana.
 	 * 
-	 * @param diaSemana, o diaSemana
+	 * @param diaSemana o dia da semana
 	 */
 	public void setDiaSemana(int diaSemana) {
 		this.diaSemana = diaSemana;
@@ -54,7 +54,7 @@ public class Disponibilidade {
 	/**
 	 * Atualizar uma instância de dataInicio.
 	 * 
-	 * @param dataInicio, o dataInicio
+	 * @param dataInicio a data de inicio
 	 */
 	public void setDataInicio(Calendar dataInicio) {
 		this.dataInicio = dataInicio;
@@ -72,14 +72,14 @@ public class Disponibilidade {
 	/**
 	 * Atualizar uma instância de dataFim.
 	 * 
-	 * @param dataFim, o dataFim
+	 * @param dataFim a data de fim
 	 */
 	public void setDataFim(Calendar dataFim) {
 		this.dataFim = dataFim;
 	}
 
 	/**
-	 * Checa se é disponivelTodaSemana.
+	 * Checa se é disponivel toda semana.
 	 * 
 	 * @return o valor de disponivelTodaSemana
 	 */
@@ -90,7 +90,7 @@ public class Disponibilidade {
 	/**
 	 * Atualizar uma instância de disponivelTodaSemana.
 	 * 
-	 * @param disponivelTodaSemana, o disponivelTodaSemana
+	 * @param disponivelTodaSemana Instância de disponivelTodaSemana
 	 */
 	public void setDisponivelTodaSemana(boolean disponivelTodaSemana) {
 		this.disponivelTodaSemana = disponivelTodaSemana;

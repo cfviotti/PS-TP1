@@ -1,0 +1,9 @@
++Data		Horas Trabalhadas	Tipo Tarefa		Descricao da Tarefa 
++31/10/2015	2:00			Coverage 		Melhoria da cobertura do módulo calendário
++01/11/2015 	3:00			Coverage/Refatoração	Cobertura do método principal Main () *
++02/11/2015 	3:00			Coverage		Adicionado testes para exceções do calendário
++02/11/2015 	2:00			Documentação		Documentação corrigida e javadoc gerado novamente
+
++Total:		10:00h
+
+* O coverage do método main foi considerado desnecessário pelo grupo e descartado na entrega final.

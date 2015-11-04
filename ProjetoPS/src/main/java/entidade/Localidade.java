@@ -37,7 +37,7 @@ public class Localidade {
 	/**
 	 * Atualizar uma instância de nome.
 	 * 
-	 * @param nome, o nome
+	 * @param nome o nome da localidade
 	 */
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -55,7 +55,7 @@ public class Localidade {
 	/**
 	 * Atualizar uma instância de endereco.
 	 * 
-	 * @param endereco, o endereco
+	 * @param endereco o endereço da localidade
 	 */
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
@@ -73,7 +73,7 @@ public class Localidade {
 	/**
 	 * Atualizar uma instância de disponibilidades.
 	 * 
-	 * @param disponibilidades, o disponibilidades
+	 * @param disponibilidades as disponibilidades da localidade
 	 */
 	public void setDisponibilidades(List<Disponibilidade> disponibilidades) {
 		this.disponibilidades = disponibilidades;

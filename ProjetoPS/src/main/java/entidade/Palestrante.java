@@ -35,7 +35,7 @@ public class Palestrante {
 	/**
 	 * Atualizar uma instância de nome.
 	 * 
-	 * @param nome, o nome
+	 * @param nome O nome do palestrante
 	 */
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -53,7 +53,7 @@ public class Palestrante {
 	/**
 	 * Atualizar uma instância de disponibilidades.
 	 * 
-	 * @param disponibilidades, o disponibilidades
+	 * @param disponibilidades Disponibilidade do palestrante
 	 */
 	public void setDisponibilidades(List<Disponibilidade> disponibilidades) {
 		this.disponibilidades = disponibilidades;
