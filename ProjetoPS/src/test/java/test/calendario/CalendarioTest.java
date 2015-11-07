@@ -5,6 +5,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Calendar;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -26,18 +27,6 @@ public class CalendarioTest {
 	@Before
 	public void initialize() {
 		calendarioTratamento = new CalendarioTratamentoImpl();
-	}
-	
-	@Test(expected=IndexOutOfBoundsException.class)
-	
-	public void testBuscarDataFimException() {
-		new CalendarioTratamentoImpl().buscarDataFim("xx", "yy");
-	}
-	
-	@Test(expected=java.lang.NumberFormatException.class)
-	
-	public void testBuscarDataInicioException() {
-		new CalendarioTratamentoImpl().buscarDataInicio("xx", "yy");
 	}
 	
 	@Test
@@ -73,7 +62,7 @@ public class CalendarioTest {
 	public void testBuscarDataFim() {
 		Calendar dataFim = Calendar.getInstance();
 		dataFim.set(Calendar.HOUR_OF_DAY, 15);
-		dataFim.set(Calendar.MINUTE, 43);
+		dataFim.set(Calendar.MINUTE, 44);
 		dataFim.set(Calendar.DAY_OF_MONTH, 2);
 		dataFim.set(Calendar.MONTH, 1);
 		dataFim.set(Calendar.YEAR, 2000);
@@ -82,7 +71,8 @@ public class CalendarioTest {
 		assertEquals(dataFim.get(Calendar.MONTH), dataFimCriada.get(Calendar.MONTH));
 		assertEquals(dataFim.get(Calendar.YEAR), dataFimCriada.get(Calendar.YEAR));
 		assertEquals(dataFim.get(Calendar.DAY_OF_MONTH), dataFimCriada.get(Calendar.DAY_OF_MONTH));
-		assertEquals(dataFim.get(Calendar.HOUR_OF_DAY), dataFimCriada.get(Calendar.HOUR_OF_DAY));		
+		assertEquals(dataFim.get(Calendar.HOUR_OF_DAY), dataFimCriada.get(Calendar.HOUR_OF_DAY));
+		assertEquals(dataFim.get(Calendar.MINUTE), dataFimCriada.get(Calendar.MINUTE));
 	}
 	
 	@Test
