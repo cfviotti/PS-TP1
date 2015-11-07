@@ -1,7 +1,122 @@
-Calendario de Palestras (1/2015)
+Calendario de Palestras (1-12/ 2015)
 
+Mês 1/2015
 Dia 1
-NomePalestra1 (Palestrante1): 10:00-12:00.
+NomePalestra1 Composto (Palestrante1): 10:00-12:00.
+Local: Sala 02.
+Endereço: PAT 0987.
 Dia 13
 NomePalestra13 (Palestrante13): 10:00-12:00.
+Local: Sala 02.
+Endereço: PAT 0987.
+
+Mês 2/2015
+Dia 2
+NomePalestra2 (Palestrante2): 12:00-14:00.
+Local: Sala 02.
+Endereço: PAT 0987.
+Dia 14
+NomePalestra14 (Palestrante14): 12:00-14:00.
+Local: Sala 02.
+Endereço: PAT 0987.
+
+Mês 3/2015
+Dia 3
+NomePalestra3 (Palestrante3): 10:00-12:00.
+Local: Anfiteatro A1.
+Endereço: CIC/EST - UnB.
+Dia 15
+NomePalestra15 (Palestrante15): 10:00-12:00.
+Local: Anfiteatro A1.
+Endereço: CIC/EST - UnB.
+
+Mês 4/2015
+Dia 4
+NomePalestra4 (Palestrante4): 12:00-14:00.
+Local: Sala 01.
+Endereço: PAT 0987.
+Dia 16
+NomePalestra16 (Palestrante16): 12:00-14:00.
+Local: Sala 01.
+Endereço: PAT 0987.
+
+Mês 5/2015
+Dia 5
+NomePalestra5 (Palestrante5): 10:00-12:00.
+Local: Anfiteatro A2.
+Endereço: CIC/EST - UnB.
+Dia 17
+NomePalestra17 (Palestrante17): 10:00-12:00.
+Local: Anfiteatro A2.
+Endereço: CIC/EST - UnB.
+
+Mês 6/2015
+Dia 6
+NomePalestra6 (Palestrante6): 12:00-14:00.
+Local: Sala 03.
+Endereço: PAT 0987.
+Dia 18
+NomePalestra18 (Palestrante18): 12:00-14:00.
+Local: Sala 03.
+Endereço: PAT 0987.
+
+Mês 7/2015
+Dia 7
+NomePalestra7 (Palestrante7): 10:00-12:00.
+Local: Anfiteatro A3.
+Endereço: CIC/EST - UnB.
+Dia 19
+NomePalestra19 (Palestrante19): 10:00-12:00.
+Local: Anfiteatro A3.
+Endereço: CIC/EST - UnB.
+
+Mês 8/2015
+Dia 8
+NomePalestra8 (Palestrante8): 10:00-12:00.
+Local: Sala 04.
+Endereço: PAT 0987.
+Dia 20
+NomePalestra20 (Palestrante20): 10:00-12:00.
+Local: Sala 04.
+Endereço: PAT 0987.
+
+Mês 9/2015
+Dia 9
+NomePalestra9 (Palestrante9): 12:00-14:00.
+Local: Sala 05.
+Endereço: PAT 0987.
+Dia 21
+NomePalestra21 (Palestrante21): 12:00-14:00.
+Local: Sala 05.
+Endereço: PAT 0987.
+
+Mês 10/2015
+Dia 10
+NomePalestra10 (Palestrante10): 10:00-12:00.
+Local: Anfiteatro A5.
+Endereço: CIC/EST - UnB.
+Dia 22
+NomePalestra22 (Palestrante22): 10:00-12:00.
+Local: Anfiteatro A5.
+Endereço: CIC/EST - UnB.
+
+Mês 11/2015
+Dia 11
+NomePalestra11 (Palestrante11): 12:00-14:00.
+Local: Sala 06.
+Endereço: PAT 0987.
+Dia 23
+NomePalestra23 (Palestrante23): 12:00-14:00.
+Local: Sala 06.
+Endereço: PAT 0987.
+
+Mês 12/2015
+Dia 12
+NomePalestra12 (Palestrante12): 10:00-12:00.
+Local: Anfiteatro A6.
+Endereço: CIC/EST - UnB.
+Dia 24
+NomePalestra24 (Palestrante24): 10:00-12:00.
+Local: Anfiteatro A6.
+Endereço: CIC/EST - UnB.
 
