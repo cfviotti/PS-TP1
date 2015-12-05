@@ -17,8 +17,8 @@ public class PalestraLeituraImpl implements PalestraLeitura {
 				String[] line = currentLine.trim().replaceAll("\\.", "").split(" ");
 				dados.add(line);
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (IOException e) {			
+			System.out.println("Arquivo " + fileName + " inválido.");
 		}
 		return dados;
 	}
