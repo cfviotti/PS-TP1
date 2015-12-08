@@ -14,17 +14,24 @@ public class CalendarioControleImpl implements CalendarioControle {
 
 	@Override
 	public void alocarPalestras(List<Palestra> palestras) {
-		for (Palestra palestra : palestras) {
-			for (Disponibilidade disponibilidade : palestra.getPalestrante().getDisponibilidades()) {
-				Integer horas = disponibilidade.getDataFim().get(Calendar.HOUR_OF_DAY) - disponibilidade.getDataInicio().get(Calendar.HOUR_OF_DAY);
-				Integer minutos = disponibilidade.getDataFim().get(Calendar.MINUTE) - disponibilidade.getDataInicio().get(Calendar.MINUTE);
-				Integer minutosDisponiveis = horas * 60 + minutos;
-				if (minutosDisponiveis >= palestra.getDuracao()) {
-					palestra.setDataInicio(disponibilidade.getDataInicio());
-					palestra.setDataFim(disponibilidade.getDataFim());
-					break;
+		
+		
+		try {
+			for (Palestra palestra : palestras) {
+				for (Disponibilidade disponibilidade : palestra.getPalestrante().getDisponibilidades()) {
+					Integer horas = disponibilidade.getDataFim().get(Calendar.HOUR_OF_DAY) - disponibilidade.getDataInicio().get(Calendar.HOUR_OF_DAY);
+					Integer minutos = disponibilidade.getDataFim().get(Calendar.MINUTE) - disponibilidade.getDataInicio().get(Calendar.MINUTE);
+					Integer minutosDisponiveis = horas * 60 + minutos;
+					if (minutosDisponiveis >= palestra.getDuracao()) {
+						palestra.setDataInicio(disponibilidade.getDataInicio());
+						palestra.setDataFim(disponibilidade.getDataFim());
+						break;
+					}
 				}
 			}
+		} catch (NullPointerException e) {			
+			System.out.println("O arquivo palestrantes.txt está vazio. O programa não será iniciado.");
+			System.exit(1);
 		}
 	}
 

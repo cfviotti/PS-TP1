@@ -24,8 +24,8 @@ public class LocalidadeLeituraImpl implements LocalidadeLeitura {
 				dados.add(line);
 			}
 		} catch (IOException e) {
-			System.out.println("Arquivo " + fileName + " inválido.");
-			//e.printStackTrace();
+			System.out.println("Arquivo " + fileName + " vazio. O programa será encerrado");
+			System.exit(1);			
 		}
 		return dados;
 	}

@@ -17,23 +17,28 @@ public class CalendarioPersistenciaImpl implements CalendarioPersistencia {
 		File file = new File(FILE_PATH + fileName);
 		try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
 			if (opcao != 0) {
-				Palestra primeiraPalestra = palestrasMap.get(opcao - 1).get(0);
-				bufferedWriter.write("Calendario de Palestras (" + (opcao) + "/" +
-				primeiraPalestra.getDataInicio().get(Calendar.YEAR) + ")\n\n");
-				Integer dataAnterior = 0;
-				for (Palestra palestra : palestrasMap.get(opcao - 1)) {
-					Integer dataAtual = palestra.getDataInicio().get(Calendar.DAY_OF_MONTH);
-					if (!dataAtual.equals(dataAnterior)) {
-						dataAnterior = dataAtual;
-						bufferedWriter.write("Dia " + dataAtual + "\n");
+				try {
+					Palestra primeiraPalestra = palestrasMap.get(opcao - 1).get(0);
+					bufferedWriter.write("Calendario de Palestras (" + (opcao) + "/"
+							+ primeiraPalestra.getDataInicio().get(Calendar.YEAR) + ")\n\n");
+					Integer dataAnterior = 0;
+					for (Palestra palestra : palestrasMap.get(opcao - 1)) {
+						Integer dataAtual = palestra.getDataInicio().get(Calendar.DAY_OF_MONTH);
+						if (!dataAtual.equals(dataAnterior)) {
+							dataAnterior = dataAtual;
+							bufferedWriter.write("Dia " + dataAtual + "\n");
+						}
+						bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
+						bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.HOUR_OF_DAY)) + ":");
+						bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.MINUTE)) + "-");
+						bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.HOUR_OF_DAY)) + ":");
+						bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.MINUTE)) + ".\n");
 					}
-					bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
-					bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.HOUR_OF_DAY)) + ":");
-					bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.MINUTE)) + "-");
-					bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.HOUR_OF_DAY)) + ":");
-					bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.MINUTE)) + ".\n");
+					bufferedWriter.write("\n");
+				} catch (NullPointerException e) {
+					System.out.println("O arquivo" + fileName + " está vazio. O programa será encerrado.");
+					System.exit(1);
 				}
-				bufferedWriter.write("\n");
 			} else {
 				boolean escreverCalendario = true;
 				for (Map.Entry<Integer, List<Palestra>> entry : palestrasMap.entrySet()) {
@@ -50,19 +55,27 @@ public class CalendarioPersistenciaImpl implements CalendarioPersistencia {
 							"/" + primeiraPalestra.getDataInicio().get(Calendar.YEAR) + "\n");
 					Integer dataAnterior = 0;
 					
-					for (Palestra palestra : entry.getValue()) {
-						Integer dataAtual = palestra.getDataInicio().get(Calendar.DAY_OF_MONTH);
-						if (!dataAtual.equals(dataAnterior)) {
-							bufferedWriter.write("Dia " + dataAtual + "\n");
-							dataAnterior = dataAtual;
-						}
-						bufferedWriter.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
-						bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.HOUR_OF_DAY)) + ":");
-						bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.MINUTE)) + "-");
-						bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.HOUR_OF_DAY)) + ":");
-						bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.MINUTE)) + ".\n");
-						bufferedWriter.write("Local: " + palestra.getLocal().getNome() + ".\n");
-						bufferedWriter.write("Endereço: " + palestra.getLocal().getEndereco() + ".\n");
+					try {
+						for (Palestra palestra : entry.getValue()) {
+							Integer dataAtual = palestra.getDataInicio().get(Calendar.DAY_OF_MONTH);
+							if (!dataAtual.equals(dataAnterior)) {
+								bufferedWriter.write("Dia " + dataAtual + "\n");
+								dataAnterior = dataAtual;
+							}
+							bufferedWriter
+									.write(palestra.getNome() + " (" + palestra.getPalestrante().getNome() + "): ");
+							bufferedWriter
+									.write(formatarHorario(palestra.getDataInicio().get(Calendar.HOUR_OF_DAY)) + ":");
+							bufferedWriter.write(formatarHorario(palestra.getDataInicio().get(Calendar.MINUTE)) + "-");
+							bufferedWriter
+									.write(formatarHorario(palestra.getDataFim().get(Calendar.HOUR_OF_DAY)) + ":");
+							bufferedWriter.write(formatarHorario(palestra.getDataFim().get(Calendar.MINUTE)) + ".\n");
+							bufferedWriter.write("Local: " + palestra.getLocal().getNome() + ".\n");
+							bufferedWriter.write("Endereço: " + palestra.getLocal().getEndereco() + ".\n");
+						} 
+					} catch (NullPointerException e) {
+						System.out.println("O arquivo" + fileName + " está vazio. O programa será encerrado.");
+						System.exit(1);
 					}
 					bufferedWriter.write("\n");
 				}

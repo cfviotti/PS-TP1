@@ -77,7 +77,7 @@ public class Main {
 				if (opcao > -1 && opcao < 13) {
 					opcaoValida = true;
 					String fileName = "CalendarioPalestras.txt";
-					Map<Integer, List<Palestra>> palestrasMap = calendarioControle.gerarMapaPalestras(palestras);
+					Map<Integer, List<Palestra>> palestrasMap = calendarioControle.gerarMapaPalestras(palestras);					
 					String caminhoArquivo = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, opcao);
 					StringBuilder mensagemSucesso = new StringBuilder();
 					mensagemSucesso.append("Arquivo " + fileName + " criado com sucesso!\n\n");
