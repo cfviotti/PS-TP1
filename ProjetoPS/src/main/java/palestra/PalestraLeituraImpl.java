@@ -18,7 +18,8 @@ public class PalestraLeituraImpl implements PalestraLeitura {
 				dados.add(line);
 			}
 		} catch (IOException e) {			
-			System.out.println("Arquivo " + fileName + " inválido.");
+			System.out.println("Arquivo " + fileName + " não existe. O programa não será iniciado.");
+			System.exit(1);
 		}
 		return dados;
 	}
