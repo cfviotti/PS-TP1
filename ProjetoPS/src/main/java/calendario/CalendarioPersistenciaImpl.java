@@ -13,7 +13,7 @@ import entidade.Palestra;
 public class CalendarioPersistenciaImpl implements CalendarioPersistencia {
 
 	@Override
-	public String imprimirArquivo(Map<Integer, List<Palestra>> palestrasMap, String fileName, Integer opcao) {
+	public String imprimirArquivo(Map<Integer, List<Palestra>> palestrasMap, String fileName, Integer opcao, String filtro) {
 		File file = new File(FILE_PATH + fileName);
 		try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
 			if (opcao != 0) {

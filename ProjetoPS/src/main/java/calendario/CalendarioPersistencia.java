@@ -15,6 +15,6 @@ public interface CalendarioPersistencia extends CalendarioComponent {
 	 * @param opcao A opção referente ao mês escolhido
 	 * @return uma String com o Path do arquivo gerado
 	 */
-	String imprimirArquivo(Map<Integer, List<Palestra>> palestras, String fileName, Integer opcao);
+	String imprimirArquivo(Map<Integer, List<Palestra>> palestras, String fileName, Integer opcao, String filtro);
 	
 }
