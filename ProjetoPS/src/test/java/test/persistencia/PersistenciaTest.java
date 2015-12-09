@@ -71,10 +71,11 @@ public class PersistenciaTest {
 	
 	@Test
 	public void testImprimirArquivo() {
+		String filtro = "";
 		String fileName = "CalendarioPalestras.txt";
-		String filePath = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, 0);
+		String filePath = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, 0, filtro);
 		assertNotNull(filePath);
-		filePath = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, 1);
+		filePath = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, 1, filtro);
 		assertNotNull(filePath);
 	}
 	
