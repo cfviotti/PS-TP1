@@ -88,6 +88,7 @@ public class Main {
 		
 		boolean opcaoValida = false;
 		boolean subOpcaoValida = false;
+		String filtro = "";
 		
 		int limSuperior = 0;
 		int limInferior = -1;
@@ -127,7 +128,6 @@ public class Main {
 					
 					do {						
 						String userInputSubMenu = (String) JOptionPane.showInputDialog(null, menuEscolhido.toString(), "Organizador de Eventos", JOptionPane.QUESTION_MESSAGE);
-						
 						if (userInputSubMenu != null && userInput.matches("^-?\\d+$")) {
 							Integer opcaoSubMenu = Integer.valueOf(userInputSubMenu);
 							
@@ -135,7 +135,7 @@ public class Main {
 								
 								subOpcaoValida = true;								
 								Map<Integer, List<Palestra>> palestrasMap = calendarioControle.gerarMapaPalestras(palestras);					
-								String caminhoArquivo = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, opcao);
+								String caminhoArquivo = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, opcao, filtro);
 								StringBuilder mensagemSucesso = new StringBuilder();
 								mensagemSucesso.append("Arquivo " + fileName + " criado com sucesso!\n\n");
 								mensagemSucesso.append("O arquivo se encontra no caminho:\n\n");
@@ -162,7 +162,7 @@ public class Main {
 					} while (!subOpcaoValida);					
 					
 					Map<Integer, List<Palestra>> palestrasMap = calendarioControle.gerarMapaPalestras(palestras);					
-					String caminhoArquivo = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, opcao);
+					String caminhoArquivo = calendarioPersistencia.imprimirArquivo(palestrasMap, fileName, opcao, filtro);
 					StringBuilder mensagemSucesso = new StringBuilder();
 					mensagemSucesso.append("Arquivo " + fileName + " criado com sucesso!\n\n");
 					mensagemSucesso.append("O arquivo se encontra no caminho:\n\n");
