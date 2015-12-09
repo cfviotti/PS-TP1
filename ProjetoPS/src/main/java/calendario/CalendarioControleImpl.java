@@ -29,7 +29,8 @@ public class CalendarioControleImpl implements CalendarioControle {
 					}
 				}
 			}
-		} catch (NullPointerException e) {			
+		} catch (NullPointerException e) {	
+			//e.printStackTrace();
 			System.out.println("O arquivo palestrantes.txt está vazio. O programa não será iniciado.");
 			System.exit(1);
 		}

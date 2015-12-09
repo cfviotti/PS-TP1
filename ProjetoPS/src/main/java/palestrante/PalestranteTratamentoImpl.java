@@ -69,6 +69,7 @@ public class PalestranteTratamentoImpl implements PalestranteTratamento {
 				if (palestra.getPalestrante() != null && palestra.getPalestrante().getNome() != null) {
 					if (palestra.getPalestrante().getNome().equals(palestrante.getNome())) {
 						palestra.setPalestrante(palestrante);
+						
 					}
 				}
 			}
