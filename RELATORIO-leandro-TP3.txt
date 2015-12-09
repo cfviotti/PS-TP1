@@ -1,0 +1,7 @@
+Data		Horas Trabalhadas	Tipo Tarefa					Descricao da Tarefa Realizada
+02/12/2015	2:00				Codificar modulo					Revisando codigo
+03/12/2015 	4:00				Codificar modulo			Revisando codigo
+05/12/2015 	2:00				Codificar modulo			Revisando codigo
+07/12/2015 	6:00				Codificar modulo			Revisando codigo
+08/12/2015 	5:00				Codificar modulo			Revisando codigo
+Total:		16:00h
