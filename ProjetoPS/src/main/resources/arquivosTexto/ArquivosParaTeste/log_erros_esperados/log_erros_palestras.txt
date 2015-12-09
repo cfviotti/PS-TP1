@@ -1,0 +1,6 @@
+Palestrante: Pal@strante1.
+Palestrante: Palestr@nte2.
+Palestrante: Pal%%estrante3.
+Palestrante: P!@#$alestrante4.
+Palestrante: P(*(lestrante5.
+Palestrante: Pal@estr($*#ant@12.
